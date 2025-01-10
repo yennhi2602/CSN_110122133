@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hội Văn học Nghệ thuật</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        
+       
+
+        <div class="container">
+      
+            <header>
+                <a href="index.html">
+                    <img src="image/logotravinh.png" alt="Trang chủ">
+                    <div class="text-overlay">Hội Văn học Nghệ thuật</div>
+                </a> 
+
+            </header>
+            <nav>
+                <div class="menu">
+                    <ul>                       
+                        <li><a href="gioithieu.html"> Giới thiệu</a></li>
+                        <li><a href="tintuc.html" >Tin tức</a></li>
+                        <li><a href="sukien.html" >Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html" >Hoạt động</a></li>
+                        <li class="has-submenu">
+                            <a href="chihoitructhuoc.html">Chi hội trực thuộc</a>
+                            <ul class="submenu">
+                                <li><a href="chihoi1.html">Văn học</a></li>
+                                <li><a href="chihoi2.html">Văn nghệ Khmer</a></li>
+                                <li><a href="chihoi3.html">Âm nhạc</a></li>
+                                <li><a href="chihoi4.html">Sân khấu</a></li>
+                                <li><a href="chihoi5.html">Nhiếp ảnh</a></li>
+                                <li><a href="chihoi6.html">Mỹ thuật</a></li>
+                                <li><a href="chi hoi7.html">Văn nghệ dân gian</a></li>
+                                <li><a href="chihoi8.html">Hội kiến trúc</a></li>
+                            </ul>
+                        </li>                   
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="header-r">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Tìm kiếm..." oninput="searchFunction()">
+                            <button onclick="searchFunction()">Tìm kiếm</button>
+                        </div>
+                    
+                        <div id="results"></div>
+                    
+                        <script src="script.js"></script>
+                        <div class="auth-icons">
+                            <a href="dangnhap.html" class="login-icon" onclick="showForm('login-form')">
+                                <i class="fas fa-user-lock" style="font-size: 32px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+            </nav>               
+            <div class="row">
+                <div class="text">
+                    <a href="gioithieuchung.html" target="_blank">Giới thiệu chung</a>
+                </div>
+                <div class="image">
+                    <img src="image/gioithieuchung.jpg" alt="gtc">
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <a href="https://example.com/location" target="_blank">Vị trí trên bản đồ</a>
+                </div>
+                <div class="map">
+                    <!-- Dán mã iframe bản đồ tại đây -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9278754702837!2d106.33626487353999!3d9.939959174068026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a019fc374c4ba7%3A0xb48c4e7773655100!2zSOG7mWkgVsSDbiBI4buNYyBOZ2jhu4cgVGh14bqtdCB04buJbmggVHLDoCBWaW5o!5e0!3m2!1svi!2s!4v1733634383100!5m2!1svi!2s">
+                       
+                    </iframe>
+                </div>
+            </div>          
+            <div class="row">
+                <div class="text">
+                    <a href="tochuc.html" target="_blank">Tổ chức</a>
+                </div>
+                <div class="image">
+                    <img src="image/tochuc.jpg" alt="tc">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="text">
+                    <a href="dieule.html" target="_blank">Điều lệ</a>
+                </div>
+                <div class="image">
+                    <img src="image/dieule.jpg" alt="dl">
+                </div>
+            </div>
+
+
+            
+            <div class="row">
+                <div class="text">
+                    <a href="dshoivien.html" target="_blank">Danh sách hội viên</a>
+                </div>
+                <div class="image">
+                    <img src="image/dshv.jpg" alt="dshv">
+                </div>
+            </div>
+           
+            <footer>
+                <div class="footer-content">
+                    <h1>Hội Văn học Nghệ thuật Trà Vinh</h1>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="tintuc.html">Tin tức</a></li>
+                        <li><a href="sukien.html">Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                        <li><a href="chihoitructhuoc.html">Chi hội trực thuộc</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <p class="ft">Liên hệ với chúng tôi</p>
+                        <a href="https://www.facebook.com/profile.php?id=61553952419617&mibextid=ZbWKwL" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank" title="Google">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCPmc4Z_ZOhopi9hqPtE7CzQ" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="copyright">
+                        Địa chỉ: 52A Phạm Ngũ Lão, phường 1, Tp. Trà Vinh, Trà Vinh
+                    </p>
+                </div>
+              </footer>
+        </div>
+       
+    </body>
+    
+   
+   
+</html>

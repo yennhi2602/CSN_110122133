@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hội Văn học Nghệ thuật</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+      
+            <header>
+                <a href="index.html">
+                    <img src="image/logotravinh.png" alt="Trang chủ">
+                    <div class="text-overlay">Hội Văn học Nghệ thuật</div>
+                </a>   
+
+            </header>
+            <nav>
+                <div class="menu">
+                    <ul>                       
+                        <li><a href="trangchu.html"> Giới thiệu</a></li>
+                        <li><a href="tintuc.html" >Tin tức</a></li>
+                        <li><a href="sukien.html" >Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html" >Hoạt động</a></li>
+                        <li class="has-submenu">
+                            <a href="chihoitructhuoc.html">Chi hội trực thuộc</a>
+                            <ul class="submenu">
+                                <li><a href="chihoi1.html">Văn học</a></li>
+                                <li><a href="chihoi2.html">Văn nghệ Khmer</a></li>
+                                <li><a href="chihoi3.html">Âm nhạc</a></li>
+                                <li><a href="chihoi4.html">Sân khấu</a></li>
+                                <li><a href="chihoi5.html">Nhiếp ảnh</a></li>
+                                <li><a href="chihoi6.html">Mỹ thuật</a></li>
+                                <li><a href="chi hoi7.html">Văn nghệ dân gian</a></li>
+                                <li><a href="chihoi8.html">Hội kiến trúc</a></li>
+                            </ul>
+                        </li>                   
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="header-r">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Tìm kiếm..." oninput="searchFunction()">
+                            <button onclick="searchFunction()">Tìm kiếm</button>
+                        </div>
+                    
+                        <div id="results"></div>
+                    
+                        <script src="script.js"></script>
+                        <div class="auth-icons">
+                            <a href="dangnhap.html" class="login-icon" onclick="showForm('login-form')">
+                                <i class="fas fa-user-lock" style="font-size: 32px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </nav>
+            <main class="news-detail">
+                <p class="news-content">
+                  <h2 class="news-title">Tổng kết cuộc thi Ca khúc khu vực Đồng bằng sông Cửu Long năm 2024.</h2>
+                  <p class="news-meta">Ngày đăng: 07/12/2024</p>
+                  <p> Trong khuôn khổ các hoạt động liên kết khu vực, ngày 06/12/2024 Hội Văn học nghệ thuật Nguyễn Đình Chiểu (đơn vị đăng cai) tổ chức Lễ Tổng kết, trao giải cuộc thi Ca khúc khu vực Đồng bằng sông Cửu Long năm 2024 với chủ đề Bài ca thống nhất non sông.</p>
+                  <p>  Tham dự Lễ Tổng kết, trao giải có lãnh đạo Ban Tuyên giáo Tỉnh ủy, Sở Văn hóa, Thể thao và Du lịch tỉnh Bến Tre, đại diện lãnh đạo các Hội, Liên hiệp hội Văn học nghệ thuật 13 tỉnh, thành phố trong khu vực Đồng bằng Sông Cửu Long.</p>
+
+                  <img src="image/tt9.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption">Lãnh đạo các Hội, Liên hiệp Hội VHNT trong khu vực ĐBSCL nhận hoa</figcaption>
+                 <P>Nhà thơ Kim Ba, Chủ tịch Hội Văn học nghệ thuật Nguyễn Đình Chiểu, thay mặt Ban Tổ chức cuộc thi phát biểu tổng kết: Thời gian phát động cuộc thi từ ngày 31/01/2024 đến ngày 31/8/2024; Ban tổ chức nhận được 263 tác phẩm của 93 tác giả gửi đến từ 13 tỉnh, thành trong khu vực (các Hội gửi tham gia ít nhất là 12 tác phẩm, nhiều nhất là 46 tác phẩm) các tác phẩm phản ánh thấm đẫm hồn quê, tình đất, tình người Đồng bằng Sông Cửu Long; xuất hiện nhiều tác giả trẻ có tư duy sáng tác, tỏ rõ bản lĩnh, thực lực của mình,…</P>
+                 <p> Nhạc sĩ Thế Long, thay mặt Ban Giám khảo cuộc thi đánh giá cao kỹ năng sáng tác của các nhạc sĩ, tác giả; đồng thời chỉ ra hạn chế ở một số tác phẩm giống nhau về nội dung, cưỡng âm, ca từ chưa trong sáng, chưa tạo được sự đột phá, khác biệt trong sáng tác ca khúc,…Nhạc sĩ Thế Long gợi mở, định hướng sáng tác ca khúc trong thời gian tới cần tập trung vào một số chủ đề như chào mừng Đại hội Đảng các cấp, các chủ đề mà Chính Phủ đặt hàng… nhiệt tình gửi tác phẩm tham dự các cuộc thi cấp khu vực và toàn quốc tổ chức.</p>
+                 <p>Tác phẩm đạt giải nhất cuộc thi là “Rừng trong thành phố” của nhạc sĩ Đức Phú, đơn vị tỉnh Bến Tre (viết về chủ đề cây xanh của thành phố Trà Vinh); tác phẩm “Thương lắm Cầu Kè ơi” của nhạc sĩ Bảo Sơn, đơn vị tỉnh Trà Vinh đạt giải khuyến khích.</p>
+
+                                       
+                    <img src="image/tt9.1.jpg" alt="Hình minh họa" class="content-image">
+                    <figcaption class="caption">Các tác giả có ca khúc đạt giải khuyến khích</figcaption>
+                    <p> 16 ca khúc đạt giải của cuộc thi, được VTV Cần Thơ dàn dựng và phát sóng, Ban Tổ chức biên tập và in 1.000 quyển tuyển tập các ca khúc vào vòng chung kết cuộc thi.</p>
+
+                        <img src="image/tt9.2.jpg" alt="Hình minh họa" class="content-image">
+                        <figcaption class="caption">Ca khúc đạt giải nhất được giới thiệu trên VTV Cần Thơ</figcaption>
+
+                </article>
+
+                <div class="back-button">
+                    <a href="tintuc9.html">
+                        &#8592; Quay lại
+                    </a>
+                </div>
+           
+          
+                <footer>
+                    <div class="footer-content">
+                        <h1>Hội Văn học Nghệ thuật Trà Vinh</h1>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="tintuc.html">Tin tức</a></li>
+                            <li><a href="sukien.html">Sự kiện</a></li>
+                            <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                            <li><a href="chihoitructhuoc.html">Chi hội trực thuộc</a></li>
+                            <li><a href="lienhe.html">Liên hệ</a></li>
+                        </ul>
+                        <div class="social-icons">
+                            <p class="ft">Liên hệ với chúng tôi</p>
+                            <a href="https://www.facebook.com/profile.php?id=61553952419617&mibextid=ZbWKwL" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.google.com" target="_blank" title="Google">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCPmc4Z_ZOhopi9hqPtE7CzQ" target="_blank" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <p class="copyright">
+                            Địa chỉ: 52A Phạm Ngũ Lão, phường 1, Tp. Trà Vinh, Trà Vinh
+                        </p>
+                    </div>
+                  </footer>
+        </div>
+       
+    </body>
+</html>

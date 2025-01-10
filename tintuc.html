@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hội Văn học Nghệ thuật</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="index.html">
+                    <img src="image/logotravinh.png" alt="Trang chủ">
+                    <div class="text-overlay">Hội Văn học Nghệ thuật</div>
+                </a>   
+            
+            </header>
+            <nav>
+                <div class="menu">
+                  <ul>                       
+                    <li><a href="trangchu.html"> Giới thiệu</a></li>
+                    <li><a href="tintuc.html" >Tin tức</a></li>
+                    <li><a href="sukien.html" >Sự kiện</a></li>
+                    <li><a href="lichhoatdong.html" >Hoạt động</a></li>
+                    <li class="has-submenu">
+                        <a href="chihoitructhuoc.html">Chi hội trực thuộc</a>
+                        <ul class="submenu">
+                            <li><a href="chihoi1.html">Văn học</a></li>
+                            <li><a href="chihoi2.html">Văn nghệ Khmer</a></li>
+                            <li><a href="chihoi3.html">Âm nhạc</a></li>
+                            <li><a href="chihoi4.html">Sân khấu</a></li>
+                            <li><a href="chihoi5.html">Nhiếp ảnh</a></li>
+                            <li><a href="chihoi6.html">Mỹ thuật</a></li>
+                            <li><a href="chi hoi7.html">Văn nghệ dân gian</a></li>
+                            <li><a href="chihoi8.html">Hội kiến trúc</a></li>
+                        </ul>
+                    </li>                   
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+              
+                <div class="header-r">
+                  <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Tìm kiếm..." oninput="searchFunction()">
+                    <button onclick="searchFunction()">Tìm kiếm</button>
+                </div>
+            
+                <div id="results"></div>
+            
+                <script src="script.js"></script>
+                  <div class="auth-icons">
+                      <a href="dangnhap.html" class="login-icon" onclick="showForm('login-form')">
+                          <i class="fas fa-user-lock" style="font-size: 32px;"></i>
+                      </a>
+                  </div>
+              </div>
+            </div>
+
+            </nav>
+          
+        
+            <!-- Bố cục chính -->
+        
+            
+            <div class="news-item">
+              <div class="thumbnail">
+                <a href="tintucmot.html">
+                  <img src="image/tintuc1.jpg" alt="Hình ảnh bài viết">
+                </a>
+                <p class="news-meta">Ngày đăng: 03/12/2024</p>
+              </div>
+              <div class="content">
+                <a href="tintucmot.html" class="title">
+                  Tăng cường nguồn lực đầu tư, đáp ứng yêu cầu cấp thiết phát triển con người và văn hóa Việt Nam.
+
+                </a>
+                <p class="description">(VHO, 30/11/2024) - Quốc hội đã xem xét, thông qua Nghị quyết phê duyệt chủ trương đầu tư Chương trình mục tiêu quốc gia về phát triển văn hoá giai đoạn 2025 – 2035 nhằm tăng cường nguồn lực đầu tư, đáp ứng yêu cầu cấp thiết về phát triển con người toàn diện và xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc.
+
+                </p>
+               
+              </div>
+
+            </div>
+
+
+            <div class="news-item">
+              <div class="thumbnail">
+                <a href="tintuc2.html">
+                  <img src="image/tintuc2.jpg" alt="Hình ảnh bài viết">
+                </a>
+                <p class="news-meta">Ngày đăng: 03/12/2024</p>
+              </div>
+              <div class="content">
+                <a href="tintuc2.html" class="title">
+                  35 tác phẩm xuất sắc được trao giải cuộc thi viết “Những tấm gương bình dị mà cao quý” lần thứ 15.
+
+                </a>
+                <p class="description">   (VHO, 2/12/2024) - Ngày 2.12, tại Hà Nội, Báo Quân đội nhân dân (QĐND), Vụ Báo chí - Xuất bản (Ban Tuyên giáo Trung ương) đã tổ chức họp báo thông tin về cuộc thi viết “Những tấm gương bình dị mà cao quý” lần thứ 15 (2023-2024).
+
+                </p>
+               
+              </div>
+
+            </div>
+
+
+            <div class="news-item">
+              <div class="thumbnail">
+                <a href="tintuc3.html">
+                  <img src="image/tintuc3.jpg" alt="Hình ảnh bài viết">
+                </a>
+                <p class="news-meta">Ngày đăng: 02/12/2024</p>
+              </div>
+              <div class="content">
+                <a href="tintuc3.html" class="title">
+                  Đại hội Chi hội Nghệ sĩ Nhiếp ảnh Việt Nam tại Trà Vinh
+
+                </a>
+                <p class="description"> Ngày 30/11/2024, tại Phòng Câu lạc bộ Hội Văn học Nghệ thuật tỉnh Trà Vinh, Chi hội Nghệ sĩ Nhiếp ảnh Việt Nam Trà Vinh tiến hành tổ chức Đại hội lần thứ IV, nhiệm kỳ 2024 - 2029 với tổng số đại biểu được triệu tập là 8/8 hội viên. Đến dự đại hội có NSNA Võ Duy Bằng - Ủy viên Ban Chấp hành Hội NSNA Việt Nam phụ trách khu vực phía Nam, lãnh đạo Hội Văn học Nghệ thuật Trà Vinh, cùng phóng viên báo, đài về dự đưa tin.
+
+                </p>
+               
+              </div>
+
+            </div>
+
+
+            <div class="news-item">
+              <div class="thumbnail">
+                <a href="tintuc4.html">
+                  <img src="image/tintuc4.jpg" alt="Hình ảnh bài viết">
+                </a>
+                <p class="news-meta">Ngày đăng: 01/12/2024</p>
+              </div>
+              <div class="content">
+                <a href="tintuc4.html" class="title">
+                  Hội thảo khoa học “Huyền Trân công chúa: cuộc đời và giai thoại”.
+
+                </a>
+                <p class="description">   (VHO, 30/11/2024) -  Ngày 30.11 tại TP. Nam Định, Viện Nghiên cứu Tôn giáo (Viện Hàn lâm KHXHVN) phối hợp Sở VHTTDL tỉnh Nam Định, UBND huyện Vụ Bản tổ chức Hội thảo khoa học “Huyền Trân công chúa: cuộc đời và giai thoại”.
+
+                </p>
+               
+              </div>
+
+            </div>
+
+
+            <div class="news-item">
+              <div class="thumbnail">
+                <a href="tintuc5.html">
+                  <img src="image/tt5.jpg" alt="Hình ảnh bài viết">
+                </a>
+                <p class="news-meta">Ngày đăng: 30/11/2024</p>
+              </div>
+              <div class="content">
+                <a href="tintuc5.html" class="title">
+                  Để Giải thưởng Sách Quốc gia trở thành một trong những sự kiện văn hoá lớn.
+
+                </a>
+                <p class="description">   (VHO, 29/11/2024) - Tối 29.11, tại Nhà hát Lớn Hà Nội đã diễn ra Lễ trao Giải thưởng Sách quốc gia lần thứ 7 - năm 2024 nhằm tôn vinh, tri ân những người làm sách và góp phần lan tỏa những giá trị tốt đẹp của sách. Sự kiện do Bộ TT&TT phối hợp với Ban Tuyên giáo Trung ương, Hội Xuất bản Việt Nam, Đài Truyền hình Việt Nam tổ chức.
+
+                </p>
+               
+              </div>
+
+            </div>
+
+
+            <div class="news-item">
+              <div class="thumbnail">
+                <a href="tintuc6.html">
+                  <img src="image/tt6.jpg" alt="Hình ảnh bài viết">
+                </a>
+                <p class="news-meta">Ngày đăng: 30/11/2024</p>
+              </div>
+              <div class="content">
+                <a href="tintuc6.html" class="title">
+                  Festival Mỹ thuật trẻ lần thứ 7 năm 2024 trao 29 Giải thưởng.
+
+                </a>
+                <p class="description">  (VHO, 29/11/2024) - Ngày 29.11 tại Hà Nội, Cục Mỹ thuật, Nhiếp ảnh và Triển lãm (Bộ VHTTDL) đã trang trọng tổ chức Lễ khai mạc Festival Mỹ thuật trẻ lần thứ 7 năm 2024. Đây là hoạt động quy mô lớn, nhiều sức hút được tổ chức thường kỳ 2 năm một lần. Thứ trưởng Tạ Quang Đông dự và trao giải cho các tác giả có tác phẩm xuất sắc.
+
+                </p>
+               
+              </div>
+
+            </div>
+
+            <div class="news-item">
+              <div class="thumbnail">
+                <a href="tintuc7.html">
+                  <img src="image/tt7.jpg" alt="Hình ảnh bài viết">
+                </a>
+                <p class="news-meta">Ngày đăng: 07/12/2024</p>
+              </div>
+              <div class="content">
+                <a href="tintuc7.html" class="title">
+                  Hội Văn học Nghệ thuật Trà Vinh kết nạp hội viên mới năm 2024.
+
+                </a>
+                <p class="description">   Ngày 06/12, tại Phòng Câu lạc bộ, Hội Văn học Nghệ thuật tỉnh Trà Vinh tổ chức Lễ kết nạp hội viên, dự lễ kết nạp có Nhà báo Huỳnh Tấn Đạt - Phó Chủ tịch Hội, Tổng Biên tập Tạp chí Văn nghệ Trà Vinh, cùng đại diện các chi hội trưởng, chi hội phó, ủy viên BCH các chi hội chuyên ngành và 14 hội viên mới.
+
+
+                </p>
+               
+              </div>
+
+            </div>
+
+
+            <div class="news-item">
+              <div class="thumbnail">
+                <a href="tintuc8.html">
+                  <img src="image/tt8.jpg" alt="Hình ảnh bài viết">
+                </a>
+                <p class="news-meta">Ngày đăng: 07/12/2024</p>
+              </div>
+              <div class="content">
+                <a href="tintuc8.html" class="title">
+                  Tập huấn nghiệp vụ nhiếp ảnh năm 2024.
+
+                </a>
+                <p class="description"> Sáng ngày 07/12/2024, Hội Văn học Nghệ thuật tỉnh Trà Vinh khai giảng Lớp tập huấn nghiệp vụ Nhiếp ảnh kết hợp với nói chuyện chuyên đề về Nhiếp ảnh năm 2024. Đến dự khai giảng lớp tập huấn có lãnh đạo và cán bộ Văn phòng, Ban Công tác hội viên của Hội VHNT Trà Vinh; NSNA Lý Hoàng Long - Ủy viên Hội đồng nghệ thuật Hội Nghệ sĩ Nhiếp ảnh Việt Nam; cùng hơn 20 học viên là hội viên chi hội nhiếp ảnh Trà Vinh, một số tác giả yêu thích lĩnh vực nhiếp ảnh trong và ngoài tỉnh tham dự.
+
+
+                </p>
+               
+              </div>
+
+            </div>
+
+
+            <div class="news-item">
+              <div class="thumbnail">
+                <a href="tintuc9.html">
+                  <img src="image/tt9.jpg" alt="Hình ảnh bài viết">
+                </a>
+                <p class="news-meta">Ngày đăng: 07/12/2024</p>
+              </div>
+              <div class="content">
+                <a href="tintuc9.html" class="title">
+                  Tổng kết cuộc thi Ca khúc khu vực Đồng bằng sông Cửu Long năm 2024. hóa Việt Nam.
+
+                </a>
+                <p class="description"> Trong khuôn khổ các hoạt động liên kết khu vực, ngày 06/12/2024 Hội Văn học nghệ thuật Nguyễn Đình Chiểu (đơn vị đăng cai) tổ chức Lễ Tổng kết, trao giải cuộc thi Ca khúc khu vực Đồng bằng sông Cửu Long năm 2024 với chủ đề Bài ca thống nhất non sông.
+
+                </p>
+               
+              </div>
+
+            </div>
+                  
+            <div class="back-button">
+              <a href="tintuc.html">
+                  &#8592; Quay lại
+              </a>
+            </div>
+        
+            <footer>
+              <div class="footer-content">
+                <h1>Hội Văn học Nghệ thuật Trà Vinh</h1>
+                <ul class="footer-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="sukien.html">Sự kiện</a></li>
+                    <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                    <li><a href="chihoitructhuoc.html">Chi hội trực thuộc</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+                <div class="social-icons">
+                  <p class="ft">Liên hệ với chúng tôi</p>
+                    <a href="https://www.facebook.com/profile.php?id=61553952419617&mibextid=ZbWKwL" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.google.com" target="_blank" title="Google">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCPmc4Z_ZOhopi9hqPtE7CzQ" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <p class="copyright">
+                    Địa chỉ: 52A Phạm Ngũ Lão, phường 1, Tp. Trà Vinh, Trà Vinh
+                </p>
+            </div>
+            </footer>
+          
+        </div>
+       
+    </body>
+</html>

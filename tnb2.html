@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hội Văn học Nghệ thuật</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+      
+            <header>
+                <a href="index.html">
+                    <img src="image/logotravinh.png" alt="Trang chủ">
+                    <div class="text-overlay">Hội Văn học Nghệ thuật</div>
+                </a>   
+
+            </header>
+            <nav>
+                <div class="menu">
+                    <ul>                       
+                        <li><a href="trangchu.html"> Giới thiệu</a></li>
+                        <li><a href="tintuc.html" >Tin tức</a></li>
+                        <li><a href="sukien.html" >Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html" >Hoạt động</a></li>
+                        <li class="has-submenu">
+                            <a href="chihoitructhuoc.html">Chi hội trực thuộc</a>
+                            <ul class="submenu">
+                                <li><a href="chihoi1.html">Văn học</a></li>
+                                <li><a href="chihoi2.html">Văn nghệ Khmer</a></li>
+                                <li><a href="chihoi3.html">Âm nhạc</a></li>
+                                <li><a href="chihoi4.html">Sân khấu</a></li>
+                                <li><a href="chihoi5.html">Nhiếp ảnh</a></li>
+                                <li><a href="chihoi6.html">Mỹ thuật</a></li>
+                                <li><a href="chi hoi7.html">Văn nghệ dân gian</a></li>
+                                <li><a href="chihoi8.html">Hội kiến trúc</a></li>
+                            </ul>
+                        </li>                   
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="header-r">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Tìm kiếm..." oninput="searchFunction()">
+                            <button onclick="searchFunction()">Tìm kiếm</button>
+                        </div>
+                    
+                        <div id="results"></div>
+                    
+                        <script src="script.js"></script>
+                        <div class="auth-icons">
+                            <a href="dangnhap.html" class="login-icon" onclick="showForm('login-form')">
+                                <i class="fas fa-user-lock" style="font-size: 32px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </nav>
+            <main class="news-detail">
+                <p class="news-content">
+                  <h2 class="news-title">Đại hội điểm Chi bộ 12, Đảng ủy Trường Đại học Trà Vinh.</h2>
+                  <p class="news-meta">Ngày đăng: 05/12/2024</p>
+                  <p>Sáng nay (05/12), Chi bộ 12 (Trường Kinh tế Luật) thuộc Đảng ủy Trường Đại học Trà Vinh tổ chức Đại hội đảng viên chi bộ nhiệm kỳ 2025 - 2027. Đây là đơn vị được Đảng ủy Khối các cơ quan và Doanh nghiệp (CCQ-DN) tỉnh chọn tổ chức Đại hội điểm để rút kinh nghiệm cấp chi bộ trực thuộc Đảng ủy cơ sở.
+                    
+                  </p>
+                  <img src="image/tnb2.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption">Lãnh đạo Đảng ủy Khối CCQ-DN tỉnh và đại biểu tham dự Đại hội.</figcaption>
+                <p>Đến dự và chỉ đạo Đại hội có các đồng chí: Nguyễn Văn Tám, Tỉnh ủy viên, Bí thư Đảng ủy Khối CCQ-DN tỉnh; Trần Thị Kim Phượng và Lữ Công Tạo, Phó Bí thư Đảng ủy Khối CCQ-DN tỉnh; các đồng chí Tổ công tác của Đảng ủy Khối CCQ-DN tỉnh theo dõi, hướng dẫn, tổ chức Đại hội; GS.TS Phạm Tiết Khánh, Bí thư Đảng ủy, Chủ tịch Hội đồng trường; PGS.TS Nguyễn Minh Hòa, Phó Bí thư Đảng ủy, Hiệu trưởng Trường Đại học Trà Vinh.</p>
+                <p>Tham dự Đại hội cón có lãnh đạo đảng ủy cơ sở và bí thư chi bộ trực thuộc đảng ủy cơ sở đến từ các đảng ủy cơ sở trực thuộc Đảng ủy Khối CCQ-DN tỉnh (dự rút kinh nghiệm).</p>
+                  
+                      
+                   
+                    <img src="image/tnb2.1.jpg" alt="Hình minh họa" class="content-image">
+                    <figcaption class="caption">Đoàn Chủ tịch điều hành Đại hội.</figcaption>
+                   <p>Chi bộ 12 trực thuộc Đảng bộ cơ sở Trường Đại học Trà Vinh, hiện quản lý và lãnh đạo 03 đơn vị gồm: Trường Kinh tế Luật; Trung tâm Tư vấn pháp luật; Trung tâm Đào tạo Logistics và Thương mại điện tử, với tổng số 43 đảng viên trên tổng số 71 viên chức. Chi bộ 12 có đội ngũ đảng viên và viên chức trình độ cao, đa dạng về chuyên môn và lý luận chính trị, đảm bảo khả năng lãnh đạo hiệu quả các nhiệm vụ đào tạo, bồi dưỡng và tư vấn trong lĩnh vực kinh tế và pháp luật.</p>
+
+                    
+                   <img src="image/tnb2.2.jpg" alt="Hình minh họa" class="content-image">
+                   <figcaption class="caption">PGS.TS Nguyễn Văn Nguyện phát biểu khai mạc Đại hội.</figcaption>
+                   <p>PGS.TS Nguyễn Văn Nguyện, Ủy viên Ban Thường vụ Đảng ủy Trường Đại học Trà Vinh, Bí thư Chi bộ 12 cho biết, trong nhiệm kỳ 2022 - 2025, Chi bộ luôn được đánh giá hoàn thành xuất sắc nhiệm vụ, với một số ưu điểm nổi bật như: lãnh đạo đơn vị thực hiện và hoàn thành tốt các chỉ tiêu, nhiệm vụ chính trị của đơn vị;</p>
+
+                    
+                   <img src="image/tnb2.3.jpg" alt="Hình minh họa" class="content-image">
+                   <figcaption class="caption">Đại biểu các cơ sở Đảng ngoài Trường Đại học Trà Vinh tham dự Đại hội rút kinh nghiệm.</figcaption>
+                   <p>Lãnh đạo thực hiện tốt công tác tuyển sinh, chỉ tiêu tuyển có xu hướng tăng dần hàng năm, kết quả tuyển đều đạt và vượt so chỉ tiêu được giao; tổ chức vận hành kế hoạch đào tạo đồng bộ tuân thủ quy chế, chú trọng đổi mới phương pháp và duy trì tiêu chí kiểm định chất lượng quốc tế; công tác nghiên cứu khoa học và phục vụ cộng đồng luôn được quan tâm, 100% giảng viên thực hiện vượt khối lượng định mức.</p>
+
+                   <img src="image/tnb2.4.jpg" alt="Hình minh họa" class="content-image">
+                   <figcaption class="caption">Đồng chí Diệp Huyền Thảo, Chi ủy viên thông qua báo cáo tại Đại hội.</figcaption>
+                   <p>Lãnh đạo thực hiện tốt Quy chế dân chủ tại cơ sở và phong trào Dân vận khéo; công tác đấu tranh phòng, chống tham nhũng, tiêu cực, lãng phí. Trong nhiệm kỳ không có cá nhân hay đơn vị vi phạm hay có biểu hiện vi phạm, đồng thời thực hiện tốt công tác quốc phòng - an ninh và xây dựng cơ quan văn minh. Lãnh đạo thực hiện tốt các nghị quyết, kết luận, chỉ thị của Trung ương và của Đảng cấp trên. Lãnh đạo các tổ chức đoàn thể và thực hiện tốt công tác xây dựng tổ chức đảng, thực hiện thắng lợi chỉ tiêu, nhiệm vụ Nghị quyết nhiệm kỳ 2022 - 2025; hàng năm Chi bộ đạt danh hiệu trong sạch, vững mạnh tiêu biểu.</p>
+
+                   <img src="image/tnb2.5.jpg" alt="Hình minh họa" class="content-image">
+                   <figcaption class="caption">Đại biểu đóng góp phương hướng nhiệm kỳ 2025 - 2027.</figcaption>
+                   <p>Phát biểu chỉ đạo Đại hội, GS.TS Phạm Tiết Khánh, Bí thư Đảng ủy Trường Đại học Trà Vinh đánh giá cao và ghi nhận những kết quả đạt được của Chi bộ 12 trong nhiệm kỳ qua. GS.TS Phạm Tiết Khánh đề nghị Ban Chấp hành Chi bộ 12 và toàn thể đảng viên cần quan tâm những nguyên nhân dẫn đến những hạn chế trong nhiệm kỳ vừa qua, để từ đó có giải pháp khắc phục trong nhiệm kỳ mới; quan tâm đặc biệt về công tác xây dựng Đảng trong giai đoạn hiện nay.</p>
+
+                   <img src="image/tnb26.jpg" alt="Hình minh họa" class="content-image">
+                   <figcaption class="caption">GS.TS Phạm Tiết Khánh, Bí thư Đảng ủy trường phát biểu chỉ đạo Đại hội.</figcaption>
+                   <p>Ngay sau Đại hội, cần tập trung hoàn chỉnh Quy chế làm việc của Chi bộ, ban hành Nghị quyết phân công nhiệm vụ cụ thể, rõ ràng; xây dựng kế hoạch cụ thể hóa các chỉ tiêu, nghị quyết và có những biện pháp, giải pháp thiết thực, nhằm thực hiện thắng lợi Nghị quyết Đại hội đã đề ra.</p>
+                   <p>Đại hội thống nhất bầu Ban Chấp hành Chi bộ khóa mới gồm 07 Ủy viên, bầu đoàn đại biểu dự Đại hội đại biểu Đảng bộ Trường Đại học Trà Vinh khóa VI, nhiệm kỳ 2025 - 2030 với 10 đại biểu. PGS.TS Nguyễn Văn Nguyện được Đại hội tín nhiệm bầu tái đắc cử Bí thư Chi bộ 12, nhiệm kỳ 2025 - 2027.</p>
+
+
+                   
+                   <img src="image/tnb2.7.jpg" alt="Hình minh họa" class="content-image">
+                   <figcaption class="caption">Đại biểu bỏ phiếu bầu Ban Chấp hành chi bộ khóa mới.</figcaption>
+                    
+
+                   <img src="image/tnb2.8.jpg" alt="Hình minh họa" class="content-image">
+                   <figcaption class="caption">Ban Chấp hành Chi bộ nhiệm kỳ 2025 - 2027 ra mắt, hạ quyết tâm.</figcaption>
+
+
+                   <img src="image/tnb2.9.jpg" alt="Hình minh họa" class="content-image">
+                   <figcaption class="caption">PGS.TS Nguyễn Minh Hòa, Phó Bí thư Đảng ủy, Hiệu trưởng Trường Đại học Trà Vinh tặng hoa chúc mừng đoàn đại biểu tham dự Đại hội Đảng bộ Trường Đại học Trà Vinh khóa VI, nhiệm kỳ 2025 - 2030.</figcaption>
+                    
+
+                </article>
+
+                <div class="back-button">
+                    <a href="tnb2.html">
+                        &#8592; Quay lại
+                    </a>
+                </div>
+           
+          
+                <footer>
+                    <div class="footer-content">
+                        <h1>Hội Văn học Nghệ thuật Trà Vinh</h1>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="tintuc.html">Tin tức</a></li>
+                            <li><a href="sukien.html">Sự kiện</a></li>
+                            <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                            <li><a href="chihoitructhuoc.html">Chi hội trực thuộc</a></li>
+                            <li><a href="lienhe.html">Liên hệ</a></li>
+                        </ul>
+                        <div class="social-icons">
+                            <p class="ft">Liên hệ với chúng tôi</p>
+                            <a href="https://www.facebook.com/profile.php?id=61553952419617&mibextid=ZbWKwL" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.google.com" target="_blank" title="Google">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCPmc4Z_ZOhopi9hqPtE7CzQ" target="_blank" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <p class="copyright">
+                            Địa chỉ: 52A Phạm Ngũ Lão, phường 1, Tp. Trà Vinh, Trà Vinh
+                        </p>
+                    </div>
+                  </footer>
+        </div>
+       
+    </body>
+</html>

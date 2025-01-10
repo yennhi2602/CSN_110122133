@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hội Văn học Nghệ thuật</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+      
+            <header>
+                
+                <a href="index.html">
+                    <img src="image/logotravinh.png" alt="Trang chủ">
+                    <div class="text-overlay">Hội Văn học Nghệ thuật</div>
+                </a>   
+
+            </header>
+            <nav>
+                <div class="menu">
+                    <ul>                       
+                        <li><a href="trangchu.html"> Giới thiệu</a></li>
+                        <li><a href="tintuc.html" >Tin tức</a></li>
+                        <li><a href="sukien.html" >Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html" >Hoạt động</a></li>
+                        <li class="has-submenu">
+                            <a href="chihoitructhuoc.html">Chi hội trực thuộc</a>
+                            <ul class="submenu">
+                                <li><a href="chihoi1.html">Văn học</a></li>
+                                <li><a href="chihoi2.html">Văn nghệ Khmer</a></li>
+                                <li><a href="chihoi3.html">Âm nhạc</a></li>
+                                <li><a href="chihoi4.html">Sân khấu</a></li>
+                                <li><a href="chihoi5.html">Nhiếp ảnh</a></li>
+                                <li><a href="chihoi6.html">Mỹ thuật</a></li>
+                                <li><a href="chi hoi7.html">Văn nghệ dân gian</a></li>
+                                <li><a href="chihoi8.html">Hội kiến trúc</a></li>
+                            </ul>
+                        </li>                   
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="header-r">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Tìm kiếm..." oninput="searchFunction()">
+                            <button onclick="searchFunction()">Tìm kiếm</button>
+                        </div>
+                    
+                        <div id="results"></div>
+                    
+                        <script src="script.js"></script>
+                        <div class="auth-icons">
+                            <a href="dangnhap.html" class="login-icon" onclick="showForm('login-form')">
+                                <i class="fas fa-user-lock" style="font-size: 32px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </nav>
+              
+            <div class="container-sukien">
+              <div class="events">
+                <ul>
+                    
+                <li onclick="showDetails('event1')">
+                    
+                    <h3><Trà><a>Trà Vinh: Tổng kết Tuần lễ Văn hóa - Du lịch gắn với Lễ hội Ok Om Bok năm 2024.</a></h3>
+                </li>
+                <li onclick="showDetails('event2')">
+      
+                    <h3><a>Trao 11 giải Cuộc thi sáng tác, quảng bá hình ảnh đẹp Trà Vinh</a></h3>
+                </li>
+                <li onclick="showDetails('event3')">
+                    
+                    <h3><a>Ý tưởng đoạt 04 giải thưởng trong năm</a></h3>
+                </li>
+                <li onclick="showDetails('event4')">
+             
+                    <h3><a>70 gian hàng tham gia Không gian triển lãm “Du lịch Trà Vinh - Kết nối và phát triển” và Không gian ẩm thực Nam Bộ</a></h3>
+                </li>
+                <li onclick="showDetails('event5')">
+                    
+                    <h3><a>Trà Vinh tổ chức hàng loạt hoạt động trong tuần lễ văn hóa</a></h3>
+                </li>
+                <li onclick="showDetails('event6')">
+                    
+                    <h3><a>Sôi nổi Tuần lễ Văn hóa, Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh</a></h3>
+                </li>
+                <li onclick="showDetails('event7')">
+                    
+                    <h3><a>Khai mạc Kỳ họp thứ 19 – HĐND tỉnh khóa X</a></h3>
+                </li>
+                <li onclick="showDetails('event8')">
+                    
+                    <h3><a>Tổng kết khảo sát khả thi dự án “Hỗ trợ kinh tế tuần hoàn xanh thông qua cải thiện chuỗi giá trị nông nghiệp vùng Đồng bằng sông Cửu Long, Việt Nam”</a></h3>
+
+                </li>
+                <li onclick="showDetails('event9')">
+                    
+                    <h3><a>Văn hóa dân tộc Khmer Trà Vinh “khoe sắc”</a></h3>
+                </li>
+                <li onclick="showDetails('event10')">
+                    
+                    <h3><a>Văn hóa Khmer - "báu vật" để phát triển du lịch Trà Vinh</a></h3>
+                </li>
+                </ul>
+            </div>
+            <div class="details">
+                <div id="event1" class="detail-content">
+                  
+                    <h2>Trà Vinh: Tổng kết Tuần lễ Văn hóa - Du lịch gắn với Lễ hội Ok Om Bok năm 2024.</h2>
+                    <p class="news-meta">Ngày đăng: 06/12/2024</p>
+                    
+                    <img src="image/sk1.jpg" alt="Event 1" />
+                    <figcaption class="caption">Phó Chủ tịch UBND tỉnh Trà Vinh tặng Bằng khen cho các cá nhân có thành tích xuất sắc trong công tác tổ chức, phục vụ Tuần lễ Văn hóa - Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024</figcaption>
+
+                    <img src="image/sk1.1.jpg" alt="Event 1" />
+                    <figcaption class="caption">Chư Tăng, đại biểu tham dự</figcaption>
+                    <p>Tham dự hội nghị có Hòa thượng Thạch Sok Xane, Phó Chủ tịch Hội đồng Trị sự, Trưởng ban Trị sự GHPGVN tỉnh Trà Vinh, Chủ tịch Hội Đoàn kết Sư sãi yêu nước tỉnh; Hòa thượng Thạch Oai, Chứng minh Ban Trị sự GHPGVN tỉnh, Phó Chủ tịch Thường trực Hội Đoàn kết Sư sãi yêu nước tỉnh cùng chư Tăng đại diện các chùa trong tỉnh.</p>
+                    <p>Phía lãnh đạo có ông Nguyễn Huỳnh Thiện, Phó Chủ tịch UBND tỉnh Trà Vinh, Trưởng ban Tổ chức Tuần lễ Văn hóa - Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024; cùng lãnh đạo các sở, ban ngành tỉnh; đại diện lãnh đạo các huyện, thị xã, thành phố trực thuộc tỉnh Trà Vinh.</p>
+                    <img src="image/sk1.2.jpg" alt="Event 1" />
+                    <figcaption class="caption">Hòa thượng Thạch Oai phát biểu</figcaption>
+                    <p>Tuần lễ Văn hóa, Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024 diễn ra từ ngày 9 đến ngày 15-11-2024. Đây là sự kiện được tổ chức với quy mô cấp tỉnh mở rộng các tỉnh với các hoạt động nổi bật như: không gian ẩm thực Nam Bộ, triển lãm du lịch “Trà Vinh - Kết nối và phát triển”; Hội chợ Xúc tiến thương mại - Sản phẩm công nghiệp nông thôn và OCOP; liên hoan múa không chuyên dân tộc Khmer tỉnh Trà Vinh lần thứ II; các hoạt động trưng bày, triển lãm, trình diễn trang phục truyền thống đồng bào Khmer; các hoạt động thể thao, trò chơi dân gian và đêm Lễ hội Ok Om Bok.</p>
+                    <p>Theo đánh giá của Ban Tổ chức, Tuần lễ Văn hóa - Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024 có sự chuẩn bị chu đáo từ nội dung đến hình thức hoạt động, nhằm tuyên truyền, giới thiệu quảng bá du lịch tôn vinh bản sắc văn hóa độc đáo của dân tộc Khmer. Qua đó góp phần bảo tồn và phát huy giá trị văn hóa di sản của đồng bào Khmer và củng cố, thắt chặt truyền thống đoàn kết các dân tộc.</p>
+                    <img src="image/sk1.3.jpg" alt="Event 1" />
+                    <figcaption class="caption">Trao Bằng khen cho tập thể đạt thành tích xuất sắc khi tham gia Hội thi diễu hành, thả hoa đăng tại Lễ hội Ok Om Bok</figcaption>
+                    <p>Theo tổng kết, Tuần lễ Văn hóa - Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024 đã thu hút trên 100.000 lượt du khách, nhân dân trong và ngoài tỉnh đến tham quan, vui chơi, tìm hiểu.</p>
+                    <p>Phát huy những kết quả đạt được, tại hội nghị các đại biểu đã tập trung thảo luận, đóng góp và thống nhất định hướng 12 hoạt động trọng tâm sẽ tổ chức tại Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2025.</p>
+                    <img src="image/sk1.4.jpg" alt="Event 1" />
+                    <figcaption class="caption">Ông Nguyễn Huỳnh Thiện phát biểu</figcaption>
+                    <p>Phát biểu đúc kết hội nghị, ông Nguyễn Huỳnh Thiện, Phó Chủ tịch UBND tỉnh Trà Vinh đánh giá Tuần lễ Văn hóa - Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024 đã diễn ra thành công tốt đẹp và thu hút được sự quan tâm của công chúng. Tuy nhiên, các thành viên Ban Tổ chức cần quan tâm khắc phục một số hạn chế còn tồn tại để chương trình năm 2025 thêm phong phú, hấp dẫn hơn.</p>
+                    <p>Dịp này, Chủ tịch UBND tỉnh Trà Vinh đã trao tặng Bằng khen cho 22 tập thể, 17 cá nhân đã có thành tích xuất sắc trong công tác tổ chức, phục vụ Tuần lễ Văn hóa - Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024 và 3 tập thể đạt thành tích xuất sắc trong tham gia Hội thi diễu hành, thả hoa đăng tại Lễ hội Ok Om Bok.</p>
+
+                </div>
+                <div id="event2" class="detail-content">
+                    <h2>Trao 11 giải Cuộc thi sáng tác, quảng bá hình ảnh đẹp Trà Vinh.</h2>
+                    <p class="news-meta">Ngày đăng: 10/12/2024</p>
+                    <p>Sáng ngày 10/12, Ban Tổ chức cuộc thi sáng tác, quảng bá hình ảnh đẹp Trà Vinh đợt 2 năm 2024 với chủ đề “Du lịch Trà Vinh” tổ chức lễ tổng kết và trao giải.</p>
+
+                    <img src="image/sk2.jpg" alt="Event 2" />
+                    <figcaption class="caption">Quang cảnh lễ tổng kết.</figcaption>
+
+                   <p>Tham dự lễ tổng kết có các đồng chí: Trần Quốc Tuấn, Ủy viên Ban Thường vụ Tỉnh ủy, Trưởng ban Ban Tuyên giáo Tỉnh ủy, Trưởng Ban Chỉ đạo công tác thông tin đối ngoại tỉnh, Trưởng Ban Tổ chức Cuộc thi; Dương Mỹ Pha, Phó Trưởng ban Ban Tuyên giáo Tỉnh ủy; Trưởng ban Giám khảo; Nguyễn Văn Nầy, Phó Trưởng ban Ban Tuyên giáo Tỉnh ủy và các thành viên Ban Chỉ đạo, Ban Tổ chức, Ban Giám khảo, Tổ giúp việc, Thường trực các Huyện ủy, Thị ủy, Thành ủy, Đảng ủy trực thuộc Tỉnh ủy và các tác giả đoạt giải.</p>
+
+                     <img src="image/sk2.1.jpg" alt="Event 2" />
+                    <figcaption class="caption">Đồng chí Dương Mỹ Pha, Phó Trưởng ban Ban Tuyên giáo Tỉnh ủy thông qua kết quả chấm điểm các tác phẩm dự thi.</figcaption>
+                    <p>Sau 03 tháng phát động, Cuộc thi đã nhận 299 tác phẩm dự thi của hơn 213 tác giả, 34 nhóm tác giả. Qua các vòng thẩm định, sơ khảo, chung khảo và chung kết, kết quả, Ban Tổ chức chọn 11 tác phẩm để trao giải; công nhận và khen thưởng cho 25 tác phẩm được đăng trên website Ban Tuyên giáo Tỉnh ủy và kênh Youtube ảnh đẹp Trà Vinh.</p>
+                    <img src="image/sk2.2.jpg" alt="Event 2" />
+                    <figcaption class="caption">Đồng chí Trần Quốc Tuấn, Trưởng ban Ban Tuyên giáo Tỉnh ủy trao giải Nhất cho đại diện nhóm tác giả.</figcaption>
+                    <p>Cụ thể, giải Nhất cho nhóm Công đoàn Trường Việt Anh 5 với tác phẩm “Trà Vinh và tuổi trẻ”. 02 giải Nhì cho tác giả Thạch Thân Ni, Trung tâm Văn hóa, Thông tin và Thể thao huyện Cầu Kè với tác phẩm “100 năm dừa sáp bén duyên trên vùng đất Cầu Kè” và nhóm tác giả Trung tâm Văn hóa, Thông tin và Thể thao huyện Cầu Kè với tác phẩm “Canh chua cá bông lau nấu bần - món ăn dân dã đậm chất miền quê”. 03 giải Ba cho tác giả Tăng Thành Hậu, khóm Minh Thuận B, thị trấn Cầu Ngang, huyện Cầu Ngang với tác phẩm “Du lịch biển Mỹ Long”; Đoàn Tấn Lập, Trung tâm Văn hóa, Thông tin và Thể thao huyện Cầu Kè với tác phẩm “Cầu Kè - Du lịch bên dòng Sông Hậu góc nhìn từ du khách”; Nguyễn Thị Diệu Hiền, Trường Mầm non Việt Anh 5 với tác phẩm “Đền thờ Bác - công trình của trái tim” và 05 giải Khuyến khích.</p>
+                    <img src="image/sk2.3.jpg" alt="Event 2" />
+                    <figcaption class="caption">Đồng chí Trần Quốc Tuấn, Trưởng ban Ban Tuyên giáo Tỉnh ủy phát biểu chỉ đạo lễ tổng kết.</figcaption>
+                    <p>Phát biểu tại lễ tổng kết, đồng chí Trần Quốc Tuấn nhấn mạnh: Cuộc thi lần này hướng đến mục tiêu là đẩy mạnh tuyên truyền, quảng bá bản sắc văn hoá, các giá trị nhân văn của con người, những cảnh quan, địa điểm, sản phẩm du lịch tại Trà Vinh… đến với du khách trong nước và quốc tế để góp phần nâng cao hiệu quả công tác thông tin đối ngoại trong thời gian tới, tiếp tục thực hiện có hiệu quả Kết luận số 57-KL/TW, ngày 15/6/2023 của Bộ Chính trị về tiếp tục nâng cao chất lượng, hiệu quả công tác thông tin đối ngoại trong tình hình mới và Kế hoạch số 141-KH/TU, ngày 19/9/2023 của Ban Thường vụ Tỉnh ủy về thực hiện Kết luận số 57-KL/TW của Bộ Chính trị, Chỉ thị số 12-CT/TW, ngày 05/01/2022 của Ban Bí thư về tăng cường sự lãnh đạo của Đảng, nâng cao hiệu quả đối ngoại Nhân dân trong tình hình mới.</p>
+                    <img src="image/sk2.4.jpg" alt="Event 2" />
+                    <figcaption class="caption">Đồng chí Trần Quốc Tuấn, Trưởng ban Ban Tuyên giáo Tỉnh ủy trao giải Nhì cho các tác giả.</figcaption>
+                    <p>Đồng chí Trần Quốc Tuấn yêu cầu các địa phương thường xuyên quan tâm động viên, khuyến khích cán bộ, đảng viên, đoàn viên, hội viên tham gia các cuộc thi do các cơ quan, đơn vị phát động vừa tạo điều kiện cho cán bộ, đảng viên và Nhân dân phát huy kỹ năng, sở trường, sáng tạo, đổi mới, vừa có cơ hội tiếp cận với công nghệ thông tin trong cuộc sống hàng ngày, đáp ứng ngày càng cao công cuộc chuyển đổi số của tỉnh, chủ động khai thác triệt để các cơ hội mà Cuộc cách mạng công nghệ 4.0 mang lại và bứt phá vươn lên.</p>
+                    <img src="image/sk2.5.jpg" alt="Event 2" />
+                    <figcaption class="caption">Đồng chí Dương Mỹ Pha, Phó Trưởng ban Ban Tuyên giáo Tỉnh ủy trao giải Ba cho các tác giả.</figcaption>
+                    <p>Đối với tác giả có tác phẩm đoạt giải và tác giả có tác phẩm được chọn tuyên truyền trên các kênh truyền thông của Ban Tổ chức Cuộc thi cần tiếp tục nghiên cứu, trau dồi thêm để có những sản phẩm tốt hơn, chất lượng cao hơn, tiếp tục tham gia các cuộc thi do Ban Chỉ đạo Công tác Thông tin đối ngoại tỉnh tổ chức.</p>
+                    <img src="image/sk2.6.jpg" alt="Event 2" />
+                    <figcaption class="caption">Đồng chí Nguyễn Văn Nầy, Phó Trưởng ban Ban Tuyên giáo Tỉnh ủy trao giải Khuyến khích cho các tác giả.</figcaption>
+                    <p>Để góp phần lan tỏa Cuộc thi Sáng tác, quảng bá hình ảnh đẹp Trà Vinh cho những lần tiếp theo, đồng chí Trần Quốc Tuấn đề nghị Tổ giúp việc Ban Chỉ đạo công tác thông tin đối ngoại tỉnh rút kinh nghiệm, kịp thời đề xuất giải pháp khắc phục những hạn chế, tồn tại trong các cuộc thi lần trước; các địa phương, đơn vị phối hợp hỗ trợ công tác tuyên truyền, hưởng ứng Cuộc thi để mọi cán bộ, công chức, viên chức và các tầng lớp Nhân dân có thể tham gia...</p>
+                    <img src="image/sk2.7.jpg" alt="Event 2" />
+                    <figcaption class="caption">Đồng chí Lâm Hữu Phúc, Phó Giám đốc Sở Văn hóa, Thể thao và Du lịch trao giấy chứng nhận cho các tác giả có tác phẩm được đăng trên website Ban Tuyên giáo Tỉnh ủy.</figcaption>
+                </div>
+                <div id="event3" class="detail-content">                   
+                    <h2>Ý tưởng đoạt 04 giải thưởng trong năm.</h2>
+                    <p class="news-meta">Ngày đăng: 10/12/2024</p>
+                   <p>Năm 2024, các cấp, các ngành trên địa bàn tỉnh Trà Vinh tiếp tục tổ chức nhiều cuộc thi ý tưởng, dự án khởi nghiệp. Đây là việc làm nhằm tục đẩy phong trào khởi nghiệp, đổi mới sáng tạo trong học sinh, sinh viên và các tầng lớp Nhân dân. Trong phạm vi bài viết này, chúng tôi muốn giới thiệu đến bạn đọc 01 ý tưởng được đánh giá cao qua các cuộc thi. Đó là ý tưởng “Sản xuất Bioplastic từ vỏ sầu riêng” đã xuất sắc đoạt 04 giải thưởng trong năm 2024.</p>                  
+                  
+                   <img src="image/sk3.jpg" alt="Event 3" />
+                   <figcaption class="caption">Nhóm tác giả của ý tưởng “Sản xuất Bioplastic từ vỏ sầu riêng”.</figcaption>
+                   <p>Đây là ý tưởng do nhóm 04 sinh viên đến từ Trường Đại học Trà Vinh xây dựng và tham gia các cuộc thi. 04 sinh viên gồm: Lưu Thảo Nguyên, Nguyễn Thị Thanh Ngân, Đỗ Thị Thảo Tiên và Trang Phương Diễm.</p>
+                   <p>Thành viên nhóm Nguyễn Thị Thanh Ngân cho biết, ý tưởng “Sản xuất Bioplastic từ vỏ sầu riêng” với mục đích tận dụng chất thải nông nghiệp để tạo ra nhựa sinh học. Từ đó, góp phần giảm thiểu rác thải và bảo vệ môi trường sống của chúng ta. Khi hình thành ý tưởng, nhóm của Thanh Ngân sử dụng vỏ sầu riêng để sản xuất nhựa sinh học. Qua quá trình xử lý, các chất trong vỏ sầu riêng được chuyển đổi thành nguyên liệu cho sản xuất nhựa, giúp giảm thiểu rác thải và tận dụng nguồn nguyên liệu tự nhiên sẵn có tại địa phương. Đây là sản phẩm có thể ứng dụng trong đóng gói thực phẩm, bao bì và vật liệu xây dựng… Đồng thời góp phần tăng giá trị kinh tế cho nông dân và tạo ra những sản phẩm bền vững.</p>
+                   <p>Chia sẻ thêm về sản phẩm Bioplastic từ vỏ sầu riêng, nhóm của Thanh Ngân cho biết: là những người con của quê hương Trà Vinh, chúng tôi đã luôn cảm nhận được sự phong phú của tài nguyên tự nhiên xung quanh mình. Trong số đó, vỏ sầu riêng, một phế phẩm nông nghiệp phổ biến luôn gợi lên trong chúng tôi về một tiềm năng chưa được khai thác. Từ đó, ý tưởng sản xuất Bioplastic từ vỏ sầu riêng đã ra đời dựa trên một số lý do như: vỏ sầu riêng là một phần của quá trình chế biến và tiêu thụ trái sầu riêng. Trong quá trình này, hàng trăm tấn vỏ sầu riêng thường bị lãng phí hoặc đổ vào môi trường một cách không kiểm soát. Điều này không chỉ gây ô nhiễm môi trường mà còn là một sự lãng phí tài nguyên tự nhiên. Bằng cách sử dụng vỏ sầu riêng để sản xuất Bioplastic, chúng ta có thể giảm thiểu lượng chất thải gây ô nhiễm môi trường.</p>
+                   <p>Bên cạnh, sản xuất Bioplastic từ vỏ sầu riêng có thể mang lại lợi ích kinh tế và xã hội đáng kể cho cộng đồng địa phương. Việc tạo ra một ngành công nghiệp mới từ vỏ sầu riêng sẽ mở ra nhiều cơ hội việc làm cho người dân, từ công việc thu gom, xử lý vỏ sầu riêng đến sản xuất và phân phối sản phẩm Bioplastic. Điều này không chỉ giúp cải thiện mức sống, mà còn giảm tỷ lệ thất nghiệp trong cộng đồng. Hơn nữa, việc phát triển ngành công nghiệp Bioplastic cũng có thể thúc đẩy sự phát triển kinh tế địa phương một cách bền vững.</p>
+                   <p>Đặc biệt, Bioplastic từ vỏ sầu riêng là giải pháp thay thế thân thiện với môi trường cho nhựa truyền thống. Sản phẩm được làm từ nguồn nguyên liệu tái tạo và góp phần giảm thiểu rác thải sinh học. Quá trình sản xuất Bioplastic từ vỏ sầu riêng tiết kiệm năng lượng và giảm thiểu khí thải nhà kính. Sản phẩm có nhiều ứng dụng rộng rãi trong các lĩnh vực: bao bì, da giả, dệt may và xây dựng...</p>
+                   <p>Về tính khả thi của ý tưởng, các thành viên trong nhóm cho biết, việc sản xuất Bioplastic từ vỏ sầu riêng có tính khả thi cao, dựa trên các nghiên cứu gần đây về công nghệ chuyển đổi phế phẩm nông nghiệp thành vật liệu sinh học. Quy trình sản xuất đã được thử nghiệm và chứng minh có thể áp dụng ở quy mô công nghiệp, giúp tận dụng nguồn tài nguyên sẵn có và giảm thiểu ô nhiễm môi trường. Trong quá trình sản xuất, kinh doanh sản phẩm, có những thuận lợi là nguồn nguyên liệu vỏ sầu riêng dồi dào, giúp giảm chi phí nguyên liệu và sự quan tâm ngày càng tăng của người tiêu dùng và doanh nghiệp đến các sản phẩm thân thiện với môi trường.</p>
+
+                   <p>Mặt khác, sản phẩm Bioplastic từ vỏ sầu riêng có tính cạnh tranh cao nhờ vào lợi thế về mặt môi trường và khả năng tận dụng phế phẩm nông nghiệp. Các minh chứng từ các nghiên cứu và dự án thử nghiệm cho thấy Bioplastic từ vỏ sầu riêng có đặc tính cơ học tốt, dễ dàng phân hủy sinh học và có thể thay thế nhựa truyền thống trong nhiều ứng dụng.</p>
+                   <p>Ý tưởng “Sản xuất Bioplastic từ vỏ sầu riêng” ngoài việc đoạt giải Nhất Cuộc thi ý tưởng, dự án khởi nghiệp năm 2024 do Tỉnh Đoàn Trà Vinh tổ chức vào tháng 10/2024. Trước đó, ý tưởng này còn đoạt 03 giải Khuyến khích tại các cuộc thi do: Trường Đại học Nguyễn Tất Thành, Thành phố Hồ Chí Minh tổ chức (tháng 7/2024); Sở Khoa học và Công nghệ Trà Vinh tổ chức (tháng 8/2024) và Trường Đại học Trà Vinh tổ chức vào tháng 9/2024.</p>
+                   <p>Anh Nguyễn Thanh Nhã, Phó Bí thư Thường trực Tỉnh Đoàn Trà Vinh cho biết, nhận thấy ý tưởng “Sản xuất Bioplastic từ vỏ sầu riêng” có nhiều điểm nổi bật, nên khi nhận được đề xuất từ hội đồng giám khảo, chúng tôi thống nhất trao giải Nhất cho ý tưởng này tại Cuộc thi ý tưởng, dự án khởi nghiệp năm 2024 do Tỉnh Đoàn Trà Vinh tổ chức. Ban Thường vụ Tỉnh Đoàn đánh giá cao các dự án, ý tưởng gửi đến tham gia cuộc thi. Đồng thời mong muốn qua cuộc thi này sẽ tìm ra những ý tưởng, dự án mang tính sáng tạo, có thể hiện thực hóa đưa vào phát triển và hỗ trợ triển khai thực hiện trên địa bàn tỉnh Trà Vinh.</p>
+                   <p>Riêng các ý tưởng và dự án đoạt giải cao, trong đó có ý tưởng “Sản xuất Bioplastic từ vỏ sầu riêng” sẽ được Ban Thường vụ Tỉnh Đoàn giới thiệu và tạo điều kiện để nhóm tác giả tham gia các cuộc thi do Trung ương Đoàn TNCS Hồ Chí Minh tổ chức trong năm 2025.</p>
+                </div>
+
+                <div id="event4" class="detail-content">
+                  
+                    <h2>70 gian hàng tham gia Không gian triển lãm “Du lịch Trà Vinh - Kết nối và phát triển” và Không gian ẩm thực Nam Bộ.</h2>
+                    <p class="news-meta">Ngày đăng: 09/11/2024</p>
+                    <p>Chiều ngày 09/11, tại Quảng trường Trung tâm hội nghị tỉnh Trà Vinh, Sở Văn hóa, Thể thao và Du lịch tỉnh Trà Vinh tổ chức khai mạc Không gian triển lãm “Du lịch Trà Vinh - Kết nối và phát triển” và Không gian ẩm thực Nam Bộ năm 2024.</p>
+
+                    <img src="image/sk4.jpg" alt="Event 4" />
+                    <figcaption class="caption">Nghi thức cắt băng khai mạc hoạt động.</figcaption>
+                    <p>Đây là hoạt động nằm trong chuỗi các hoạt động của Tuần lễ Văn hóa, Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024.</p>
+                    <p>Đến dự và cắt băng khai mạc hoạt động có đồng chí Dương Hoàng Sum, Tỉnh ủy viên, Giám đốc Sở Văn hóa, Thể thao và Du lịch Trà Vinh; đơn vị tổ chức sự kiện và lãnh đạo UBND các địa phương, đơn vị: thành phố Trà Vinh, Càng Long, Cầu Kè, Trà Cú, Sở Công thương, Sở Nông nghiệp và Phát triển nông thôn…</p>
+                    <img src="image/sk4.1.jpg" alt="Event 4" />
+                    <figcaption class="caption">Đồng chí Lâm Hữu Phúc, Phó Giám đốc Sở Văn hóa, Thể thao và Du lịch phát biểu khai mạc hoạt động.</figcaption>
+                    <p>Theo đồng chí Lâm Hữu Phúc, Phó Giám đốc Sở Văn hóa, Thể thao và Du lịch Trà Vinh, Không gian triển lãm du lịch “Trà Vinh - Kết nối và phát triển” và Không gian ẩm thực Nam Bộ tỉnh Trà Vinh năm 2024 diễn ra từ ngày 09 - 15/11, tại Quảng trường Trung tâm Hội nghị tỉnh.</p>
+                    <p>Sự kiện quy tụ trên 20 gian hàng triển lãm du lịch của 15 đơn vị đến từ các tỉnh đồng bằng sông Cửu Long như: thành phố Cần Thơ, huyện Phong Điền (Cần Thơ), Long An, Tiền Giang, Bến Tre, Đồng Tháp, Vĩnh Long, Đắk Nông, Đắk Lắk, Gia Lai và các doanh nghiệp du lịch trong tỉnh.</p>
+                    <img src="image/sk4.2.jpg" alt="Event 4" />
+                    <figcaption class="caption">Đồng chí Dương Hoàng Sum, Giám đốc Sở Văn hóa, Thể thao và Du lịch Trà Vinh trao cờ lưu niệm cho các đơn vị tham gia Không gian triển lãm du lịch “Trà Vinh - Kết nối và phát triển”.</figcaption>
+                    <p>Riêng Không gian ẩm thực Nam Bộ có trên 50 gian hàng, của 30 đơn vị trong và ngoài tỉnh như: An Giang, Sóc Trăng, Đồng Tháp, Thành phố Hồ Chí Minh và Trà Vinh... Mỗi gian hàng ẩm thực trưng bày, chế biến và trình diễn các món ăn, thức uống đặc trưng riêng của từng địa phương, vùng miền.</p>
+                    <p>Đây được xem là cơ hội tốt để các cơ sở ăn uống, nhà hàng, khách sạn và các đầu bếp trong và ngoài tỉnh giao lưu, chia sẻ kinh nghiệm chế biến món ngon của các vùng miền. Qua đó, nhằm thúc đẩy, hợp tác phát triển du lịch và phục vụ du khách trong tuần lễ hội.</p>
+                    <img src="image/sk4.3.jpg" alt="Event 4" />
+                    <figcaption class="caption">Lãnh đạo Sở Văn hóa, Thể thao và Du lịch Trà Vinh giới thiệu với khách các sản phẩm du lịch tiêu biểu của tỉnh.</figcaption>
+                    <p>Thông qua các hoạt động nhằm giới thiệu, quảng bá đến du khách những hình ảnh về con người Trà Vinh, các tiềm năng du lịch của tỉnh, những nét văn hóa đặc sắc của đồng bào các dân tộc trong tỉnh nói chung và văn hóa lễ hội của đồng bào dân tộc Khmer nói riêng. Tăng cường giao lưu, liên kết phát triển đa dạng ẩm thực vùng miền, các sản phẩm du lịch với các tỉnh, thành phố; thực hiện tốt công tác xúc tiến, kêu gọi các đơn vị, tổ chức, cá nhân đầu tư vào việc phát triển ngành du lịch của tỉnh Trà Vinh.</p>
+                    <img src="image/sk4.4.jpg" alt="Event 4" />
+                    <figcaption class="caption">Đại biểu tham quan các gian hàng ẩm thực.</figcaption>
+                    <p>Theo đó, đồng chí Lâm Hữu Phúc đề nghị Trung tâm Xúc tiến Du lịch tỉnh Trà Vinh phối hợp đơn vị tổ chức sự kiện và các lực lượng đảm bảo an ninh trật tự, đảm bảo nguồn điện, nguồn nước, đảm bảo an toàn cháy nổ, phòng cháy chữa cháy, bố trí phương tiện, phân công lực lượng trực tổ chức thu gom rác thải, thu gom các chất thải, nhằm đảm bảo vệ sinh môi trường.</p>
+                    <img src="image/sk4.5.jpg" alt="Event 4" />
+                    <figcaption class="caption">Đại biểu tham quan gian trưng bày trái ngon đến từ huyện Phong Điền, thành phố Cần Thơ.</figcaption>
+                    <p>Các đơn vị tham gia gian hàng ẩm thực phải bảo đảm an toàn vệ sinh thực phẩm, niêm yết giá, bán đúng giá, để rác thải và chất thải đúng nơi quy định; tiếp đón và phục vụ khách chu đáo, thân thiện, thể hiện văn hóa giao tiếp trong khâu phục vụ.</p>
+                    <img src="image/sk4.6.jpg" alt="Event 4" />
+                    <figcaption class="caption">Sản phẩm trái ngon đến từ tỉnh Đắk Nông.</figcaption>
+                    <p>Các đơn vị tham gia Không gian triển lãm du lịch tổ chức trưng bày hình ảnh, dịch vụ du lịch mang tính thẩm mỹ, nét đặc trưng của từng tỉnh, thành… phân công nhân sự trực gian hàng, đón tiếp, giới thiệu, giao lưu, quảng bá hình ảnh, con người, những sản phảm, những tour tuyến du lịch đặc trưng khi khách đến tham quan gian hàng…</p>
+                    <img src="image/sk4.7.jpg" alt="Event 4" />
+                    <figcaption class="caption">Du khách thưởng thực các món ăn tại Không gian ẩm thực Nam Bộ.</figcaption>
+                   
+                </div>
+                <div id="event5" class="detail-content">                   
+                    <h2>Trà Vinh tổ chức hàng loạt hoạt động trong tuần lễ văn hóa.</h2>
+                    <p class="news-meta">Ngày đăng: 10/11/2024</p>
+                   <p>Tối 11.9, tỉnh Trà Vinh tổ chức Lễ khai mạc Tuần lễ Văn hóa, Du lịch gắn liền với lễ hội Ok Om Bok năm 2024.</p>
+
+                  
+                   <img src="image/sk5.jpg" alt="Event 5" />
+                   <figcaption class="caption">Phó Chủ tịch UBND tỉnh Trà Vinh Nguyễn Quỳnh Thiện phát biểu khai mạc buổi lễ. Ảnh: Tạ Quang.</figcaption>
+                   <p>Thông qua các hoạt động trong chuỗi sự kiện nhằm quảng bá, giới thiệu điểm đến an toàn, hấp dẫn cho du khách trong cả nước, du khách quốc tế và bà con nhân dân tỉnh nhà tham quan, vui chơi giải trí, vui cùng lễ hội…</p>
+                   <p>Trước đó, tối cùng ngày, Sở Công Thương tổ chức khai mạc hội chợ Xúc tiến thương mại - Sản phẩm công nghiệp nông thôn và OCOP.</p>
+                   <img src="image/sk5.1.jpg" alt="Event " />
+                    <figcaption class="caption">Các tiết mục tại buổi lễ.</figcaption>
+                </div>
+
+                <div id="event6" class="detail-content">                   
+                    <h2>Sôi nổi Tuần lễ Văn hóa, Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh.</h2>
+                    <p class="news-meta">Ngày đăng: 10/11/2024</p>
+                   <p>Tuần lễ Văn hóa, Du lịch gắn với Lễ hội Ok Om Bok là dịp quảng bá đến du khách hình ảnh con người và vùng đất Trà Vinh, nhất là tiềm năng, lợi thế, nét văn hóa đặc sắc của đồng bào các dân tộc.</p>
+                  
+                   <img src="image/sk6.jpg" alt="Event 6" />
+                   <figcaption class="caption">Tiết mục múa dân gian Khmer do Đoàn nghệ thuật Khmer Ánh Bình Minh biểu diễn.</figcaption>
+                   <p>Tối 9/11, Ủy ban Nhân dân tỉnh Trà Vinh tổ chức lễ khai mạc Tuần lễ Văn hóa, Du lịch gắn với Lễ hội Ok Om Bok năm 2024.</p>
+                   <p>Phát biểu tại lễ khai mạc, Phó Chủ tịch Ủy ban Nhân dân tỉnh Trà Vinh Nguyễn Quỳnh Thiện cho biết Ok Om Bok là lễ hội truyền thống của đồng bào Khmer Nam Bộ, được Bộ Văn hóa, Thể thao và Du lịch công nhận là Di sản Văn hóa Phi vật thể cấp quốc gia.</p>
+                   <p>Tuần lễ Văn hóa, Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm nay được tổ chức quy mô cấp tỉnh mở rộng nhằm phục vụ người dân tham quan, vui chơi giải trí, giao lưu, kết nối cộng đồng, tạo động lực góp phần tăng năng suất lao động, thực hiện hoàn thành các chỉ tiêu phát triển kinh tế-xã hội năm 2024, tiến tới thực hiện thắng lợi Nghị quyết Đại hội Đảng bộ tỉnh lần thứ XI, nhiệm kỳ 2020-2025.</p>
+                   <p>Sự kiện góp phần bảo tồn, phát huy giá trị văn hóa truyền thống tốt đẹp của các dân tộc ở tỉnh, xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc.</p>
+                   <p>Đây là dịp quảng bá đến du khách hình ảnh con người và vùng đất Trà Vinh, nhất là tiềm năng, lợi thế, nét văn hóa đặc sắc của đồng bào các dân tộc, đặc biệt là đồng bào Khmer.</p>
+                   <p>Các doanh nghiệp trong và ngoài tỉnh có cơ hội giao lưu, liên kết phát triển đa dạng sản phẩm du lịch với các tỉnh, thành phố; tìm kiếm thị trường, xúc tiến đầu tư, thương mại, du lịch, kêu gọi đầu tư phát triển du lịch.</p>
+                   <p>Tuần lễ Văn hóa, Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024 diễn ra từ ngày 9-15/11 tại thành phố Trà Vinh, có nhiều hoạt động hấp dẫn gắn với các nội dung phong phú, sôi nổi.</p>
+                   <p>Cụ thể là Không gian ẩm thực Nam Bộ tỉnh Trà Vinh năm 2024; Không gian triển lãm du lịch “Trà Vinh - Kết nối và phát triển”; Hội chợ Xúc tiến thương mại-Sản phẩm công nghiệp nông thôn và OCOP gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024; Liên hoan Múa không chuyên dân tộc Khmer tỉnh Trà Vinh lần thứ II năm 2024.</p>
+                   <p>Cùng với đó là triển lãm gian hàng trưng bày sản phẩm đặc trưng của đồng bào dân tộc Khmer, triển lãm sách và phục vụ xe thư viện lưu động; trưng bày, trình diễn nghề, trang phục truyền thống đồng bào dân tộc Khmer; hoạt động kỷ niệm Ngày Di sản Văn hóa Việt Nam; biểu diễn múa rối nước; đêm lễ hội...</p>
+                   <p>Ngoài ra, tỉnh còn tổ chức nhiều hoạt động thể dục, thể thao như đua ghe ngo, đua xe môtô, bóng đá, bóng chuyền thanh niên dân tộc Khmer, đua xe đạp; trò chơi dân gian…</p>
+                   <p>Sau phần lễ là chương trình nghệ thuật do các ca sỹ, nghệ sỹ đến từ Thành phố Hồ Chí Minh, Trung tâm Văn hóa tỉnh Trà Vinh, Đoàn Nghệ thuật Khmer Ánh Bình Minh biểu diễn.</p>
+
+                
+                </div>
+
+                <div id="event7" class="detail-content">                   
+                    <h2>Khai mạc Kỳ họp thứ 19 – HĐND tỉnh khóa X.</h2>
+                    <p class="news-meta">Ngày đăng: 09/12/2024</p>
+                   <p>Sáng ngày 9/12, HĐND tỉnh Trà Vinh khóa X khai mạc Kỳ họp thứ 19 – Kỳ họp thường lệ cuối năm 2024.</p>
+                   <p>Các đồng chí: Kim Ngọc Thái, Phó Bí thư Thường trực Tỉnh ủy, Chủ tịch HĐND tỉnh; Dương Thị Ngọc Thơ, Ủy viên Ban Thường vụ Tỉnh ủy, Phó Chủ tịch HĐND tỉnh; Kiên Quân, Tỉnh ủy viên, Phó Chủ tịch HĐND tỉnh cùng chủ trì điều hành kỳ họp.</p>
+
+                  
+                   <img src="image/sk7.jpg" alt="Event 7" />
+                   <figcaption class="caption">Chủ tọa điều hành kỳ họp</figcaption>
+                   <p>  Tham dự kỳ họp có các đồng chí: Ngô Chí Cường, Ủy viên Ban Chấp hành Trung ương Đảng, Bí thư Tỉnh ủy, Trưởng đoàn đại biểu Quốc hội khóa XV, đơn vị tỉnh Trà Vinh; Lâm Minh Đằng, Phó Bí thư Tỉnh ủy; Lê Văn Hẳn, Phó Bí thư Tỉnh ủy, Chủ tịch UBND tỉnh; nguyên lãnh đạo tỉnh qua các thời kỳ; đại biểu Quốc hội khóa XV, đơn vị tỉnh Trà Vinh; lãnh đạo các sở, ban, ngành, đoàn thể tỉnh; lãnh đạo HĐND, UBND các huyện, thị xã, thành phố.</p> 
+                   <img src="image/sk7.1.jpg" alt="Event 7" />
+                   <figcaption class="caption">Đại biểu tham dự kỳ họp</figcaption>
+                   <p>Phát biểu khai mạc kỳ họp, Chủ tịch HĐND tỉnh Kim Ngọc Thái nhấn mạnh: Kỳ họp thường lệ cuối năm 2024 có ý nghĩa rất quan trọng, thảo luận nhiều vấn đề; ban hành nhiều nghị quyết liên quan trực tiếp đến quản lý, điều hành và cuộc sống của người dân.</p>
+                   <img src="image/sk7.2.jpg" alt="Event 7" />
+                   <figcaption class="caption">Chủ tịch HĐND tỉnh Kim Ngọc Thái phát biểu khai mạc Kỳ họp</figcaption>
+                   <p>Tại kỳ họp này, có nhiều nội dung quan trọng sẽ được thảo luận, quyết định theo từng phiên họp, cụ thể như: tình hình kinh tế, xã hội năm 2024; xem xét, cho ý kiến và thông qua các dự thảo nghị quyết do Thường trực HĐND, UBND tỉnh trình tại kỳ họp; hoạt động giám sát; chất vấn và trả lời chất vấn; thực hiện công tác cán bộ thuộc thẩm quyền để miễn nhiệm, bầu Ủy viên UBND tỉnh, nhiệm kỳ 2021 – 2025 đối với một số giám đốc Sở mới được bổ nhiệm.</p>
+                   <p>Với những nội dung quan trọng trên, Chủ tịch HĐND tỉnh đề nghị đại biểu HĐND tỉnh cần nêu cao tinh thần trách nhiệm, nghiên cứu kỹ tài liệu, phát huy trí tuệ để đóng góp nhiều ý kiến có chất lượng vào các nội dung của kỳ họp; góp phần cho sự thành công của kỳ họp, tạo nên những bức phá trong năm 2025 để chào mừng đại hội Đảng bộ tỉnh lần thứ XII nhiệm kỳ 2025 – 2030.</p>
+                   <p>Báo cáo về tình hình thực hiện nhiệm vụ phát triển kinh tế - xã hội năm 2024 và kế hoạch phát triển kinh tế - xã hội năm 2025, Phó Chủ tịch UBND tỉnh Châu Văn Hòa cho biết: trong năm 2024, các cấp, các ngành và Nhân dân đã nỗ lực phấn đấu thực hiện nhiệm vụ phát triển kinh tế - xã hội đạt nhiều kết quả quan trọng, khá toàn diện trên các lĩnh vực, thực hiện đạt và vượt 22/23 chỉ tiêu nghị quyết đề ra.Tăng trưởng GRDP năm 2024 ước đạt 10,04%; khu vực nông lâm nghiệp và thủy sản tăng 4,15%; khu vực công nghiệp và xây dựng ước cả năm khu vực II đạt 20, 23%; khu vực dịch vụ tăng 6,46%; quy mô nền kinh tế theo giá hiện hành ước đạt 96.622 tỷ đồng, tăng 12.662 tỷ đồng so với năm 2023; tổng thu ngân sách ước đạt trên 18.632 tỷ đồng, đạt 136,38% dự toán…</p>
+                   <img src="image/sk7.3.jpg" alt="Event 7" />
+                   <figcaption class="caption">Đại biểu biểu quyết thông qua chương trình của Kỳ họp</figcaption>
+                   <p>Tại phiên khai mạc, các đại biểu sẽ tiến hành xem xét 37 dự thảo nghị quyết, trong đó có các dự thảo nghị quyết quan trọng như: phê duyệt quyết toán thu, chi ngân sách năm 2023; phân bổ dự toán ngân sách, phê duyệt kế hoạch đầu tư công năm 2025; quy định chế độ ưu đãi miễn tiền thuê đất; sửa đổi, bổ sung một số điều của các nghị quyết HĐND tỉnh về bảng giá đất 5 năm; đề án đề nghị công nhận thành phố Trà Vinh đạt tiêu chí đô thị loại II; quy định giá dịch vụ khám bệnh, chữa bệnh; quy định mức hỗ trợ chi phí phát sinh trong thơi gian đưa đối tượng người có công với cách mạng và thân nhân liệt sĩ đi điều dưỡng phục hồi sức khỏe tập trung; chủ trương thành lập thị trấn Tân An, huyện Càng Long; cho chủ trương thành lập phường Dân Thành và phường Trường Long Hòa thuộc thị xã Duyên Hải; tán thành chủ trương điều chỉnh địa giới đơn vị hành chính cấp huyện, cấp xã để mở rộng địa giới đơn vị hành chính thành phố Trà Vinh và thành lập phường Nguyệt Hóa thuộc thành phố Trà Vinh, tỉnh Trà Vinh…</p>
+                   <p>Kỳ họp còn xem xét các báo cáo công tác của Thường trực HĐND, UBND tỉnh và các ngành hữu quan như: công tác năm 2024 của Thường trực HĐND tỉnh; kết quả thực hiện Chương trình giám sát của HĐND, Thường trực HĐND, các Ban HĐND tỉnh Trà Vinh năm 2024; kết quả giám sát việc triển khai, thực hiện Nghị quyết của HĐND tỉnh; báo cáo tổng hợp ý kiến, kiến nghị của cử tri trước Kỳ họp thường lệ cuối năm 2024 - HĐND tỉnh khóa X; kết quả thực hiện Nghị quyết số 37/NQ-HĐND ngày 29/6/2024 của HĐND tỉnh về hoạt động chất vấn tại Kỳ họp thứ 15 - Hội đồng nhân dân tỉnh khóa X; điều chỉnh kế hoạch đầu tư vốn ngân sách Trung ương của các chương trình mục tiêu quốc gia năm 2024 (bao gồm vốn năm 2023 chưa giải ngân hết đã được chuyển sang năm 2024)…
+
+                    Kỳ họp diễn ra trong 3 ngày (từ ngày 9 - 11/12) và được truyền hình trực tiếp phiên khai mạc, phiên chất vấn, phiên bế mạc kỳ họp. Chiều nay, các đại biểu HĐND sẽ tiếp tục xem xét và thảo luận và biểu quyết thông qua các dự thảo Nghị quyết HĐND tỉnh trình tại kỳ họp.</p>
+
+                </div>
+
+                
+                
+                <div id="event8" class="detail-content">                   
+                    <h2>Tổng kết khảo sát khả thi dự án “Hỗ trợ kinh tế tuần hoàn xanh thông qua cải thiện chuỗi giá trị nông nghiệp vùng Đồng bằng sông Cửu Long, Việt Nam”.</h2>
+
+                    <p class="news-meta">Ngày đăng: 06/12/2024</p>
+                   <p>Sáng ngày 6/12, tại tỉnh Trà Vinh, Đoàn công tác Văn phòng Cơ quan Hợp tác quốc tế Hàn Quốc (KOICA) tại Việt Nam và UBND hai tỉnh Trà Vinh, Bến Tre tổ chức hội nghị tổng kết, báo cáo kết quả khảo sát tính khả thi dự án “Hỗ trợ kinh tế tuần hoàn xanh thông qua cải thiện chuỗi giá trị nông nghiệp vùng Đồng bằng sông Cửu Long, Việt Nam” tại hai tỉnh Trà Vinh và Bến Tre.</p>
+                  
+                  
+                   <img src="image/sk8.jpg" alt="Event 8" />
+                   <figcaption class="caption">Quang cảnh hội nghị</figcaption>
+                   <p> Ông Châu Văn Hòa, Phó Chủ tịch UBND tỉnh Trà Vinh; ông Nguyễn Trúc Sơn, Phó Chủ tịch Thường trực UBND tỉnh Bến Tre; bà Choi Jeyun, Phó Giám đốc Quốc gia Văn phòng KOICA tại Việt Nam cùng chủ trì hội nghị. Tham dự hội nghị có lãnh đạo một số sở, ngành của hai tỉnh; ông Choi Jeong Seop, Trưởng đoàn khảo sát cùng các thành viên đoàn.</p>
+                   <p>Tại hội nghị, đại diện Văn phòng KOICA tại Việt Nam thông tin khái quát về chuyến khảo sát thiết kế dự án KOICA tại hai tỉnh Trà Vinh, Bến Tre triển khai dự án Hỗ trợ kinh tế tuần hoàn xanh thông qua cải thiện chuỗi giá trị nông nghiệp vùng Đồng bằng sông Cửu Long giai đoạn 2025 - 2029.</p>
+
+                   <img src="image/sk8.1.jpg" alt="Event 7" />
+                   <figcaption class="caption">Ông Choi Jeong Seop, Trưởng đoàn khảo sát báo cáo kết quả khảo sát tính khả thi của dự án</figcaption>
+
+                   <p>Dự án được thực hiện nhằm mục tiêu phát triển chuỗi giá trị chủ lực và tiềm năng của hai tỉnh theo hướng nâng cao chất lượng tăng trưởng, giá trị gia tăng, năng lực cạnh tranh và phát triển bền vững; tạo việc làm và tăng thu nhập, nâng cao chất lượng cuộc sống nông dân nông thôn, giảm khoảng cách mức sống giữa nông thôn và thành thị. Hướng đến phát triển chuỗi giá trị 6 ngành hàng: tôm, dừa, heo và lúa; trong đó tỉnh Trà Vinh phát triển chuỗi ngành hàng tôm, dừa và lúa.</p>
+                   <p>Dự án có tổng kinh phí thực hiện khoảng 20 triệu USD, phân bổ đều cho hai tỉnh để thực hiện các hoạt động hỗ trợ xây dựng nền tảng, tăng cường chuỗi giá trị đối với các ngành hàng được lựa chọn, hỗ trợ công nghệ xanh, quản lý dự án và quản lý hiệu suất... </p>
+
+                   <img src="image/sk8.2.jpg" alt="Event 7" />
+                   <figcaption class="caption">Phó Giám đốc Sở Kế hoạch và Đầu tư Hồng Ngọc Hưng trao đổi tại hội nghị</figcaption>
+
+                   <p>Trao đổi tại hội nghị, các đại biểu đã làm rõ một số nội dung dự kiến sẽ triển khai thực hiện tại các địa phương, như: lộ trình thực hiện theo từng giai đoạn cụ thể, việc phối hợp thực hiện nhiệm vụ giữa các ngành, địa phương; đối ứng nguồn vốn và nhân lực; cải thiện các chuỗi giá trị nông nghiệp…Đại biểu cơ bản thống nhất các hợp phần của dự án để triển khai các hoạt động dự án kịp thời, hiệu quả; các công trình xây dựng cơ sở hạ tầng của hai tỉnh.</p>
+
+                  
+                   <img src="image/sk8.3.jpg" alt="Event 7" />
+                   <figcaption class="caption">Phó Chủ tịch UBND tỉnh Trà Vinh Châu Văn Hòa phát biểu tại hội nghị</figcaption>
+                <p>Phó Chủ tịch UBND tỉnh Trà Vinh Châu Văn Hòa thống nhất và đánh giá cao mục tiêu, ý tưởng triển khai dự án và kết quả khảo sát thực tế của đoàn công tác KOICA. Đồng thời, mong muốn Văn phòng KOICA quan tâm đến đề xuất của các sở, ngành hai tỉnh và sớm cử chuyên gia đến làm việc để xem xét, triển khai dự án, hoàn thiện khung dự án và sớm hoàn thiện mục tiêu về thời gian để khởi động dự án trong thời gian tới.</p>
+
+                </div>
+
+                <div id="event9" class="detail-content">                   
+                    <h2>Văn hóa dân tộc Khmer Trà Vinh “khoe sắc”.</h2>
+
+                    <p class="news-meta">Ngày đăng: 11/11/2024</p>
+                   <p>VHO - Sáng ngày 11.11, tại Bảo tàng Văn hóa dân tộc Khmer tỉnh Trà Vinh, Sở VHTTDL Trà Vinh tổ chức khai mạc trưng bày triển lãm hoạt động kỷ niệm Ngày Di sản Văn hóa Việt Nam (23.11) gắn với sự kiện Tuần lễ Văn hóa, Du lịch và Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024.</p>
+                  
+                   <img src="image/sk9.jpg" alt="Event 9" />
+                   <figcaption class="caption">Các đại biểu cắt băng khai mạc Triển lãm.</figcaption>
+                <p>Dự Lễ khai mạc có Hòa thượng Thạch Sok Xane, Phó Chủ tịch Hội đồng trị sự Giáo hội Phật giáo Việt Nam, Trưởng Ban trị sự Giáo hội Phật giáo tỉnh Trà Vinh, Chủ tịch Hội Đoàn kết sư sãi yêu nước tỉnh; Phó Trưởng ban Thường trực Ban Tuyên giáo Tỉnh ủy Kiên Sóc Kha; Giám đốc Sở VHTTDL Dương Hoàng Sum; các sở, ngành, đoàn thể tỉnh, phòng Văn hóa và Thông tin, Trung tâm Văn hóa, Thông tin và Thể thao các huyện, thị xã, thành phố; lãnh đạo Bảo tàng tỉnh Bình Phước…</p>
+                <p>Phát biểu khai mạc, Phó Giám đốc Sở VHTTDL Thạch Bồi cho biết: Văn hóa là nền tảng tinh thần của xã hội, là sức mạnh nội sinh hun đúc nên phẩm chất, cốt cách người Việt Nam. Tỉnh Trà Vinh rất phong phú về di sản văn hóa phi vật thể và vật thể, ghi dấu những giá trị lịch sử, văn hóa và phản ánh đời sống, tinh thần của người Trà Vinh trong suốt quá trình hình thành và phát triển.</p>
+
+                   <img src="image/sk9.1.jpg" alt="Event 9" />
+                   <figcaption class="caption">Các đại biểu tham quan Triển lãm</figcaption>
+                <p>Những thành tựu đạt được trong công tác bảo tồn và phát huy giá trị di sản văn hóa trên địa bàn tỉnh thời gian qua đã góp phần thiết thực vào việc giáo dục, bảo tồn và phát huy những giá trị truyền thống văn hóa, truyền thông yêu nước, cách mạng của quê hương.</p>
+                <p>Triển lãm nhằm giúp khách tham quan hiểu rõ hơn về những giá trị truyền thống văn hóa tiêu biểu, đặc trưng đậm đà bản sắc của các dân tộc, giúp các tầng lớp nhân dân, nhất là thế hệ trẻ hiểu thêm về phong tục, tập quán, lễ hội truyền thống của dân tộc ta. Từ đó, hun đúc tinh thần giữ gìn, bảo tồn phát huy giá trị văn hóa đặc trưng riêng của mỗi dân tộc, tạo ý chí vươn lên, cùng nhau đoàn kết một lòng xây dựng đất nước càng văn minh, tiến bộ.</p>
+                <p>Tỉnh Trà Vinh hiện có 2 bảo vật quốc gia và trên 13.000 hiện vật các loại. Toàn tỉnh có 8 di sản văn hóa phi vật thể được Bộ VHTTDL đưa vào Danh mục Di sản văn hóa phi vật thể quốc gia. Đặc biệt, trong Bảo tàng Tổng hợp Trà Vinh có Bảo tàng Văn hóa dân tộc Khmer Trà Vinh đang trưng bày trên 300 hiện vật gốc và trên 100 hiện vật phục chế, phản ánh đậm nét đời sống vật chất và tinh thần của đồng bào Khmer.</p>
+
+                   <img src="image/sk9.2.jpg" alt="Event 9" />
+                 <p>Những năm qua, các cơ quan, đơn vị trong tỉnh đã có nhiều hoạt động thiết thực, góp phần bảo tồn và phát huy các giá trị di sản văn hóa của các dân tộc, đáp ứng nhu cầu tâm lý và đời sống tâm linh của Nhân dân. Đồng thời, góp phần quan trọng đưa di sản văn hóa đến với đời sống xã hội.</p>
+                 <p>Dịp này, Bảo tàng Tổng hợp Trà Vinh tiếp nhận nhiều hiện vật của các nhà sưu tập trong và ngoài tỉnh hiến tặng, có giá trị về lịch sử, văn hóa của dân tộc Việt Nam và của tỉnh. Sở VHTTDL  tặng Giấy khen cho các tập thể, cá nhân có nhiều đóng góp trong việc trao tặng các hiện vật cho Bảo tàng Tổng hợp Trà Vinh.</p>
+
+                   <img src="image/sk9.3.jpg" alt="Event 9" />
+                   <figcaption class="caption">Giám đốc Sở VHTTDL Trà Vinh Dương Hoàng Sum tặng Giấy khen cho 2 tập thể có thành tích hiến tặng hiện vật cho ngành VHTTDL</figcaption>
+                <p>Trước đó, ngày 9.11, tại Khu Văn hóa - Du lịch Ao Bà Om, Sở VHTTDL  tỉnh Trà Vinh đã tổ chức lễ khai mạc Triển lãm gian hàng trưng bày các sản phẩm đặc trưng của đồng bào dân tộc Khmer Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024.</p>
+                <p>Đây là hoạt động nằm trong chuỗi hoạt động hưởng ứng Tuần lễ Văn hóa, Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024. Triển lãm trưng bày các sản phẩm đặc trưng của đồng bào dân tộc Khmer, là hoạt động mang tính truyền thống tại lễ hội Ok Om Bok nhằm tạo điều kiện giới thiệu, quảng bá những hình ảnh về con người Trà Vinh, những nét văn hóa đặc sắc của đồng bào các dân tộc trong tỉnh nói chung và văn hóa lễ hội của đồng bào dân tộc Khmer nói riêng.Đây là hoạt động nằm trong chuỗi hoạt động hưởng ứng Tuần lễ Văn hóa, Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024. Triển lãm trưng bày các sản phẩm đặc trưng của đồng bào dân tộc Khmer, là hoạt động mang tính truyền thống tại lễ hội Ok Om Bok nhằm tạo điều kiện giới thiệu, quảng bá những hình ảnh về con người Trà Vinh, những nét văn hóa đặc sắc của đồng bào các dân tộc trong tỉnh nói chung và văn hóa lễ hội của đồng bào dân tộc Khmer nói riêng.</p>
+                <img src="image/sk9.4.jpg" alt="Event 9" />
+                <figcaption class="caption">Trước đó, ngày 9.11, tại Khu Văn hóa - Du lịch Ao Bà Om, Sở VHTTDL tỉnh Trà Vinh đã tổ chức lễ khai mạc Triển lãm gian hàng trưng bày các sản phẩm đặc trưng của đồng bào dân tộc Khmer Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024 với nhiều hoạt động văn hoá, nghệ thuật đặc sắc, thu hút đông đảo du khách.</figcaption>
+                <p>Tuần lễ Văn hóa, Du lịch gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh được diễn ra gắn với nhiều hoạt động phong phú, sôi nổi như Khai mạc Tuần lễ Văn hóa, Du lịch gắn với lễ hội Ok Om Bok năm 2024; Không gian ẩm thực Nam Bộ; Không gian triển lãm du lịch ”Trà Vinh - Kết nối và phát triển”; Hội chợ Xúc tiến thương mại - Sản phẩm Công nghiệp nông thôn và OCOP gắn với Lễ hội Ok Om Bok tỉnh Trà Vinh năm 2024; Liên hoan Múa không chuyên dân tộc Khmer tỉnh Trà Vinh lần thứ II năm 2024; Trình diễn nghề, trang phục truyền thống đồng bào dân tộc…</p>
+                </div>
+
+                <div id="event10" class="detail-content">                   
+                    <h2>Văn hóa Khmer - "báu vật" để phát triển du lịch Trà Vinh.</h2>
+
+                    <p class="news-meta">Ngày đăng: 18/10/2024</p>
+                   <p>(PLVN) - Trà Vinh, một tỉnh thuộc ĐBSCL, không chỉ sở hữu cảnh quan thiên nhiên trù phú mà còn nổi bật với nền văn hóa Khmer phong phú và đa dạng. Đây là tài nguyên sẵn có mà nếu được khai thác hiệu quả, sẽ tạo ra cơ hội phát triển bền vững cho du lịch và kinh tế địa phương.</p>
+                   <p>Văn hóa Khmer tại Trà Vinh với nét đặc trưng trong kiến trúc, lễ hội và ẩm thực, từ lâu không chỉ là yếu tố làm phong phú đời sống tinh thần của người dân mà còn có thể xem là đòn bẩy cho du lịch văn hóa. Việc nắm bắt và phát huy các giá trị này chính là chìa khóa mở ra tương lai phát triển thịnh vượng cho địa phương.</p>
+                   <p><strong>Tài nguyên văn hóa Khmer – nguồn tài sản vô giá</strong></p>
+                   <p>Tại Trà Vinh, người Khmer chiếm hơn 30% dân số địa phương, điều này góp phần tạo nên sự đa dạng văn hóa, đặc biệt là thông qua hệ thống chùa chiền và các lễ hội truyền thống. Trên toàn tỉnh có hơn 140 ngôi chùa Khmer, với kiến trúc mang đậm nét văn hóa Khmer cổ, như: Chùa Âng, chùa Hang, chùa Vàm Rây hay chùa Nodol...</p>
+                   <p>Những ngôi chùa này không chỉ là nơi thực hành tôn giáo của người Khmer mà còn là di sản văn hóa quý giá, thu hút nhiều người đến tham quan, tìm hiểu.</p>
+
+                  
+                   <img src="image/sk10.jpg" alt="Event 10" />
+                   <figcaption class="caption">Các điệu múa dân gian của đồng bào Khmer Trà Vinh luôn được trân trọng, nâng niu và giữ gìn như một tài sản vô giá.</figcaption>
+                  <p>Kiến trúc chùa Khmer là một phần tài nguyên văn hóa đặc sắc. Mỗi ngôi chùa đều mang trong mình một câu chuyện lịch sử, một phong cách kiến trúc đặc trưng và chứa đựng các giá trị nghệ thuật tinh túy của người Khmer. Việc bảo tồn và phát triển du lịch chùa chiền không chỉ giúp giữ gìn di sản văn hóa mà còn tạo ra nhiều cơ hội cho ngành du lịch.</p>
+                  <p>Nếu biết cách kết hợp du lịch tâm linh với khám phá văn hóa, Trà Vinh hoàn toàn có thể biến hệ thống chùa chiền Khmer thành điểm nhấn du lịch độc đáo, thu hút du khách trong và ngoài nước.</p>
+                  <p>Bên cạnh kiến trúc, các lễ hội truyền thống của người Khmer tại Trà Vinh như lễ hội Ok Om Bok (lễ Cúng Trăng), Chol Chnam Thmay (Tết Khmer) và lễ Sen Dolta (lễ cúng ông bà) là những sự kiện quan trọng, gắn kết với đời sống tâm linh và văn hóa cộng đồng. Những lễ hội này là dịp để người Khmer thể hiện lòng biết ơn đối với thiên nhiên, cầu nguyện cho cuộc sống no ấm, mùa màng bội thu.</p>
+                  <p>Không chỉ mang ý nghĩa tâm linh, lễ hội còn là sự kiện cộng đồng thu hút đông đảo du khách tham gia. Việc tổ chức các tour du lịch kết hợp với tham dự lễ hội sẽ tạo ra trải nghiệm phong phú, hấp dẫn cho du khách.</p>
+
+                   <img src="image/sk10.1.jpg" alt="Event 9" />
+                   <figcaption class="caption">Nền ẩm thực của người Khmer Trà Vinh cũng vô cùng hấp dẫn và độc đáo. (Ảnh: Nguyễn Thuận).</figcaption>
+                    <p>Ông Dương Hoàng Sum – Giám đốc Sở VHTTDL Trà Vinh cho biết: Người Khmer Nam Bộ nói chung và người Khmer tỉnh Trà Vinh nói riêng có một nền văn hóa từ lâu đời qua quá trình tiếp biến, giao thoa văn hóa cùng với người Việt, người Hoa tạo nên những giá trị văn hóa ngày càng phong phú và đa dạng.Trải qua thời gian, người Khmer Trà Vinh vẫn giữ được những nét văn hóa riêng biệt qua những ngôi chùa cổ kính, nghệ thuật trình diễn, các lễ hội truyền thống đặc sắc, lâu đời, đã tạo ấn tượng sâu sắc cho khách bốn phương một lần đến thăm vùng đất này. Đây chính là điểm khác biệt so với các tỉnh bạn.</p>
+                    <p>Cũng theo ông Sum, để tận dụng các tài nguyên quý giá này, trong những năm qua, đơn vị cùng các sở, ngành, địa phương thực hiện những dự án, chương trình để phát triển lĩnh vực văn hóa như mở rộng lễ hội với quy mô cấp tỉnh, các hoạt động nghệ thuật truyền thống phát triển mạnh tại các địa phương trong tỉnh như: Âm nhạc, trang phục, múa… đều tổ chức các cuộc thi để phát huy cho đội ngũ trẻ kế thừa; Đồng thời các loại hình văn hóa vật chất, ẩm thực, văn hóa tinh thần, tín ngưỡng tôn giáo cũng được trình diễn, trưng bày tại Bảo tàng Văn hóa Dân tộc Khmer và các ngôi chùa tạo thành điểm đến cho khách du lịch trong và ngoài nước đến tham quan tại tỉnh Trà Vinh.</p>
+                    <p><strong>Nắm bắt cơ hội từ độc đáo văn hóa</strong></p>
+                    <p>Với nguồn tài nguyên văn hóa sẵn có, Trà Vinh có cơ hội lớn để phát triển du lịch, đặc biệt là du lịch văn hóa. Tuy nhiên, để khai thác hiệu quả, cần có sự đầu tư đồng bộ từ cơ sở hạ tầng du lịch đến các chiến lược quảng bá. Việc phát triển mô hình du lịch cộng đồng, nơi du khách có thể tham gia trực tiếp vào đời sống của người dân bản địa, sẽ tạo ra sự gắn kết giữa du khách và văn hóa địa phương, đồng thời giúp tạo công ăn việc làm và cải thiện đời sống của người dân.</p>
+
+                   <img src="image/sk10.2.jpg" alt="Event 9" />
+                   <figcaption class="caption">Chùa Vàm Ray (huyện Trà Cú, tỉnh Trà Vinh) – nơi có tượng Phật nhập niết bàn dài 54m và cao 20m thu hút khách du lịch bởi sự hùng vĩ và tinh xảo trong nét kiến trúc thời gian qua. (Ảnh: Nguyễn Thuận).</figcaption>
+                 <p>Một trong những hướng đi tiềm năng là phát triển du lịch trải nghiệm văn hóa Khmer, bao gồm tham quan chùa chiền, tham dự lễ hội, học hỏi về nghệ thuật dân gian và thưởng thức ẩm thực Khmer. Những trải nghiệm này không chỉ mang đến cho du khách cái nhìn sâu sắc về văn hóa người Khmer mà còn giúp bảo tồn các giá trị truyền thống.</p>
+                 <p>Đó là chưa nói, việc tổ chức các hoạt động như học nấu món ăn Khmer, làm thủ công mỹ nghệ, hoặc tham gia vào các điệu múa Rămvông (múa vòng tròn), Lămleo, Saravan… gọi chung là múa dân gian) sẽ tạo nên sự hấp dẫn đặc biệt, giúp du khách không chỉ tham quan mà còn sống cùng văn hóa.</p>
+                 <p>Ẩm thực Khmer cũng là một tài nguyên tiềm năng cần được khai thác triệt để. Những món ăn như bún nước lèo, bánh canh Bến Có, hay các món ăn chế biến từ dừa sáp có thể trở thành điểm nhấn trong các chương trình du lịch ẩm thực. Việc phát triển các tour ẩm thực Khmer kết hợp với tham quan văn hóa sẽ là một bước đi mới mẻ, thu hút du khách yêu thích khám phá hương vị địa phương.</p>
+                 <p>Bên cạnh đó, Trà Vinh có thể tổ chức các sự kiện văn hóa lớn, như lễ hội Ok Om Bok, thành các sản phẩm du lịch thường niên, qua đó thu hút du khách đến vào những mùa lễ hội. Các sự kiện này không chỉ giúp lan tỏa giá trị văn hóa mà còn tạo cơ hội giao lưu, hợp tác giữa các ngành du lịch, nghệ thuật và thủ công mỹ nghệ. Đồng thời, sự kết hợp với truyền thông số, quảng bá trên các nền tảng mạng xã hội cũng là một cách hiệu quả để tiếp cận du khách quốc tế và nâng cao vị thế du lịch Trà Vinh.</p>
+
+                   <img src="image/sk10.3.jpg" alt="Event 9" />
+                   <figcaption class="caption">Hàng năm, các lễ hội như Ok Om Bok (lễ Cúng Trăng), Chol Chnam Thmay (Tết Khmer),… thu hút rất đông người xem. (Ảnh: Nguyễn Thuận).</figcaption>
+                <p>Theo Giám đốc Sở VHTTDL Trà Vinh, thời gian tới, địa phương sẽ tiếp tục đầu tư nâng cấp Khu Di tích Ao Bà Om và Bảo tàng Văn hóa Dân tộc Khmer cùng liên hoàn với Chùa Âng đã được công nhận di tích quốc gia là điểm đến để kết nối tuyến du lịch, đồng thời trong thời gian sắp tới sẽ xây dựng bảo tàng sinh thái tại Chùa Ô Đùng tại xã Hiếu Tử, huyện Tiểu Cần; Mời gọi đầu tư Làng văn hóa Dân tộc Khmer tỉnh Trà Vinh; Hỗ trợ các trang thiết bị nghệ thuật trình diễn của đồng bào dân tộc Khmer để nhằm đưa các hoạt động này gắn với hoạt động du lịch để thu hút khách tham quan.</p>
+                <p>Nguồn tài nguyên văn hóa Khmer độc đáo sẽ là chìa khóa để Trà Vinh phát triển du lịch bền vững. Sự giàu có về di sản văn hóa, từ kiến trúc, lễ hội đến ẩm thực, chính là nguồn lực mạnh mẽ giúp địa phương tạo ra sự khác biệt và hấp dẫn trong mắt du khách. Với chiến lược khai thác hợp lý, kết hợp giữa bảo tồn và phát triển, Trà Vinh có tiềm năng trở thành điểm đến văn hóa nổi bật của miền Tây Nam Bộ, góp phần nâng cao đời sống kinh tế và xã hội của người dân địa phương.</p>
+
+                </div>
+
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+      
+        
+            
+        <footer>
+            <div class="footer-content">
+                <h1>Hội Văn học Nghệ thuật Trà Vinh</h1>
+                <ul class="footer-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="sukien.html">Sự kiện</a></li>
+                    <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                    <li><a href="chihoitructhuoc.html">Chi hội trực thuộc</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+                <div class="social-icons">
+                    <p class="ft">Liên hệ với chúng tôi</p>
+                    <a href="https://www.facebook.com/profile.php?id=61553952419617&mibextid=ZbWKwL" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.google.com" target="_blank" title="Google">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCPmc4Z_ZOhopi9hqPtE7CzQ" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <p class="copyright">
+                    Địa chỉ: 52A Phạm Ngũ Lão, phường 1, Tp. Trà Vinh, Trà Vinh
+                </p>
+            </div>
+          </footer>
+        </div>
+       
+    </body>
+</html>

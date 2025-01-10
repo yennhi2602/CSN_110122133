@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hội Văn học Nghệ thuật</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+      
+            <header>
+                <a href="index.html">
+                    <img src="image/logotravinh.png" alt="Trang chủ">
+                    <div class="text-overlay">Hội Văn học Nghệ thuật</div>
+                </a>   
+
+            </header>
+            <nav>
+                <div class="menu">
+                    <ul>                       
+                        <li><a href="trangchu.html"> Giới thiệu</a></li>
+                        <li><a href="tintuc.html" >Tin tức</a></li>
+                        <li><a href="sukien.html" >Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html" >Hoạt động</a></li>
+                        <li class="has-submenu">
+                            <a href="chihoitructhuoc.html">Chi hội trực thuộc</a>
+                            <ul class="submenu">
+                                <li><a href="chihoi1.html">Văn học</a></li>
+                                <li><a href="chihoi2.html">Văn nghệ Khmer</a></li>
+                                <li><a href="chihoi3.html">Âm nhạc</a></li>
+                                <li><a href="chihoi4.html">Sân khấu</a></li>
+                                <li><a href="chihoi5.html">Nhiếp ảnh</a></li>
+                                <li><a href="chihoi6.html">Mỹ thuật</a></li>
+                                <li><a href="chi hoi7.html">Văn nghệ dân gian</a></li>
+                                <li><a href="chihoi8.html">Hội kiến trúc</a></li>
+                            </ul>
+                        </li>                   
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="header-r">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Tìm kiếm..." oninput="searchFunction()">
+                            <button onclick="searchFunction()">Tìm kiếm</button>
+                        </div>
+                    
+                        <div id="results"></div>
+                    
+                        <script src="script.js"></script>
+                        <div class="auth-icons">
+                            <a href="dangnhap.html" class="login-icon" onclick="showForm('login-form')">
+                                <i class="fas fa-user-lock" style="font-size: 32px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              
+            </nav>
+            <main class="news-detail">
+                <p class="news-content">
+                  <h2 class="news-title">Họp mặt kỷ niệm 14 năm ngày Sân khấu Việt Nam.</h2>
+
+                  <p class="news-meta">Ngày đăng: 13/09/2024</p>
+                  <p><strong>  Chiều nay (ngày 13/9) Hội Văn học Nghệ thuật Trà Vinh phối hợp với Sở Văn hóa, Thể thao và Du lịch tổ chức họp mặt kỷ niệm ngày Sân khấu Việt Nam lần thứ 14 (ngày 12/8/2010 - 12/8/2024 âm lịch).</strong></p>
+        
+                  <img src="image/hd6.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption"> Đại biểu dự buổi họp mặt kỷ niệm ngày Sân khấu Việt Nam.</figcaption>
+
+                  <p>Đến dự có các đồng chí: Kiên Sóc Kha, Tỉnh ủy viên, Phó trưởng Ban Tuyên giáo Tỉnh ủy; Dương Hoàng Sum, Tỉnh ủy viên, Giám đốc Sở Văn hóa, Thể thao và Du lịch; Lê Thị Cảnh, Phó Giám đốc Sở Tài chính; ban lãnh đạo, nguyên lãnh đạo, viên chức Hội Văn học Nghệ thuật tỉnh Trà Vinh; Thư viện tỉnh Trà Vinh; các chi hội chuyên ngành trực thuộc Hội; tất cả hội viên chi hội Sân khấu; thành viên câu lạc bộ Đờn ca tài tử các huyện Càng Long, Tiểu Cần, Cầu Ngang và thị xã Duyên Hải.</p>
+                  <p>Phát biểu ôn lại truyền thống 14 năm ngày Sân khấu Việt Nam, đồng chí Nguyễn Trọng Nghĩa, Phó Chủ tịch Hội Văn học Nghệ thuật tỉnh thông tin: tỉnh Trà Vinh có truyền thống về sân khấu cải lương; đã sinh ra những soạn giả, danh cầm, danh ca nổi tiếng góp phần làm rạng rỡ sân khấu cải lương như: Nghệ sĩ Nhân dân, soạn giả Viễn Châu, danh cầm Năm Cơ…</p>
+
+
+                  <img src="image/hd6.1.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption">Đồng chí Kiên Sóc Kha, Phó Trưởng Ban Tuyên giáo Tỉnh ủy trao Kỷ niệm chương “Vì sự nghiệp sân khấu Việt Nam” cho 04 cá nhân.</figcaption>
+                  <p>Trong kháng chiến chống Mỹ cứu nước, những năm 1960, Tỉnh ủy Trà Vinh đã chỉ đạo thành lập Đoàn Văn công Ánh Hồng trực thuộc Ban Tuyên huấn, phục vụ đắc lực sự nghiệp giải phóng dân tộc, động viên cán bộ, chiến sĩ trên mặt trận văn hóa tư tưởng và nghệ thuật trong kháng chiến, động viên quần chúng nhân dân tăng gia sản xuất, đóng góp ngày càng nhiều cho cách mạng.</p>
+                  <p>Đoàn Nghệ thuật Khmer Ánh Bình Minh, được thành lập vào năm 1963. Đến nay, Đoàn đã dàn dựng, biểu diễn nhiều chương trình ca múa nhạc, ca kịch Dù kê, đạt trên 30 Huy chương Vàng, 30 Huy chương Bạc toàn quốc và nhiều giải thưởng khác. Hiện nay, Đoàn vẫn thường xuyên sáng tác, dàn dựng biểu diễn phục vụ cán bộ, chiến sĩ và người dân vùng đồng bào Khmer trong và ngoài tỉnh.</p>
+                  <p>Chi hội Sân khấu thuộc Hội Văn học Nghệ thuật Trà Vinh thành lập vào năm 1992. Đến nay, Chi hội có hơn 40 hội viên ở các chuyên ngành sáng tác, đạo diễn, biểu diễn với hai loại hình chủ yếu là sân khấu cải lương và sân khấu dân tộc Khmer. Trong đó, có 18 người là hội viên Hội Nghệ sĩ Sân khấu Việt Nam, 01 Nghệ nhân Nhân dân, 10 Nghệ sĩ Ưu tú, 06 Nghệ nhân Ưu tú...</p>
+
+                  <img src="image/hd6.2.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption">Soạn giả Huỳnh Thanh Tuấn, Chi hội trưởng Chi hội Sân khấu Việt Nam tỉnh Trà Vinh trao quyết định kết nạp hội viên Hội Nghệ sĩ sân khấu Việt Nam.</figcaption>
+
+                  <p>Thay mặt lãnh đạo Hội và lãnh đạo Sở Văn hóa, Thể thao và Du lịch, đồng chí Nguyễn Trọng Nghĩa biểu dương những thành tựu, những nỗ lực của từng hội viên, văn nghệ sĩ và tập thể Chi hội Sân khấu trong suốt chặng đường lao động nghệ thuật. Thời gian tới, văn nghệ sĩ lĩnh vực sân khấu tiếp tục đoàn kết gắn bó, lao động nghệ thuật nghiêm túc, cho ra đời nhiều tác phẩm sân khấu có giá trị tư tưởng và nghệ thuật, giải trí, bám sát hơi thở cuộc sống, bám sát các sự kiện quan trọng của tỉnh…</p>
+
+                  <p>Dịp này, ban tổ chức buổi họp mặt công bố quyết định của Hội Nghệ sĩ Sân khấu Việt Nam tặng Kỷ niệm chương “Vì sự nghiệp sân khấu Việt Nam” cho 04 hội viên và trao quyết định kết nạp 02 hội viên Hội Nghệ sĩ Sân khấu Việt Nam.</p>
+                 
+                </article>
+
+                <div class="back-button">
+                    <a href="hoatdong6.html">
+                        &#8592; Quay lại
+                    </a>
+                </div>
+                
+              </main>
+           
+          
+              <footer>
+                <div class="footer-content">
+                    <h1>Hội Văn học Nghệ thuật Trà Vinh</h1>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="tintuc.html">Tin tức</a></li>
+                        <li><a href="sukien.html">Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                        <li><a href="chihoitructhuoc.html">Chi hội trực thuộc</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <p class="ft">Liên hệ với chúng tôi</p>
+                        <a href="https://www.facebook.com/profile.php?id=61553952419617&mibextid=ZbWKwL" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank" title="Google">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCPmc4Z_ZOhopi9hqPtE7CzQ" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="copyright">
+                        Địa chỉ: 52A Phạm Ngũ Lão, phường 1, Tp. Trà Vinh, Trà Vinh
+                    </p>
+                </div>
+              </footer>
+        </div>
+       
+    </body>
+</html>

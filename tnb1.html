@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hội Văn học Nghệ thuật</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+      
+            <header>
+                <a href="index.html">
+                    <img src="image/logotravinh.png" alt="Trang chủ">
+                    <div class="text-overlay">Hội Văn học Nghệ thuật</div>
+                </a>   
+
+            </header>
+            <nav>
+                <div class="menu">
+                    <ul>                       
+                        <li><a href="trangchu.html"> Giới thiệu</a></li>
+                        <li><a href="tintuc.html" >Tin tức</a></li>
+                        <li><a href="sukien.html" >Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html" >Hoạt động</a></li>
+                        <li class="has-submenu">
+                            <a href="chihoitructhuoc.html">Chi hội trực thuộc</a>
+                            <ul class="submenu">
+                                <li><a href="chihoi1.html">Văn học</a></li>
+                                <li><a href="chihoi2.html">Văn nghệ Khmer</a></li>
+                                <li><a href="chihoi3.html">Âm nhạc</a></li>
+                                <li><a href="chihoi4.html">Sân khấu</a></li>
+                                <li><a href="chihoi5.html">Nhiếp ảnh</a></li>
+                                <li><a href="chihoi6.html">Mỹ thuật</a></li>
+                                <li><a href="chi hoi7.html">Văn nghệ dân gian</a></li>
+                                <li><a href="chihoi8.html">Hội kiến trúc</a></li>
+                            </ul>
+                        </li>                   
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="header-r">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Tìm kiếm..." oninput="searchFunction()">
+                            <button onclick="searchFunction()">Tìm kiếm</button>
+                        </div>
+                    
+                        <div id="results"></div>
+                    
+                        <script src="script.js"></script>
+                        <div class="auth-icons">
+                            <a href="dangnhap.html" class="login-icon" onclick="showForm('login-form')">
+                                <i class="fas fa-user-lock" style="font-size: 32px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+            </nav>
+            <main class="news-detail">
+                <p class="news-content">
+                  <h2 class="news-title">Trà Vinh có 04 phụ nữ cao tuổi tiêu biểu được biểu dương toàn quốc.</h2>
+                  <p class="news-meta">Ngày đăng: 05/12/2024</p>
+                  <p>        Thông tin từ Hội Liên hiệp phụ nữ (LHPN) tỉnh Trà Vinh, từ ngày 06 - 07/12, tại Hà Nội, Trung ương Hội LHPN Việt Nam tổ chức hội nghị biểu dương phụ nữ cao tuổi tiêu biểu toàn quốc trong xây dựng gia đình văn hóa, ấm no, hạnh phúc với sự tham gia của 256 đại biểu của 63 tỉnh, thành trong cả nước.
+                    
+                  </p>
+                  <img src="image/tnb1.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption">Đồng chí Huỳnh Thị Sô Phia, Phó Chủ tịch Hội LHPN tỉnh trao đổi với các cô lịch trình tham gia hội nghị biểu dương trước khi đi Hà Nội.</figcaption>
+
+                 <p>Trong đó, Trà Vinh có 04 đại biểu cao tuổi được biểu dương gồm: cô Nguyễn Thị Giác, ấp Gò Cà, xã Nhị Long Phú, huyện Càng Long; cô Dương Thị Ngấn, ấp Chánh Hội A, xã Ngãi Hùng, huyện Tiểu Cần; cô Lâm Thị Truyền Thống, Khóm 2, thị trấn Mỹ Long, huyện Cầu Ngang; cô Ngô Thị Lựu, ấp Chợ, xã Tập Sơn, huyện Trà Cú.</p>
+                 <p>Đây là hoạt động rất ý nghĩa nhằm tôn vinh những cá nhân, tập thể tiêu biểu có thành tích xuất sắc trong thực hiện Cuộc vận động xây dựng “Gia đình 5 không, 3 sạch”, góp phần xây dựng gia đình văn hóa, ấm no, hạnh phúc, tiến bộ, văn minh.</p>
+
+                  
+                      
+                   
+                    <img src="image/tnb.jpg" alt="Hình minh họa" class="content-image">
+                    <figcaption class="caption">Từ trái sang: cô Ngô Thị Lựu, cô Lâm Thị Truyền Thống, cô Nguyễn Thị Giác, cô Dương Thị Ngấn.</figcaption>
+                   <p>Đồng thời, phát huy vai trò “Tuổi cao - gương sáng” trong xây dựng gia đình, văn minh, tiến bộ, lan tỏa truyền thống tốt đẹp của phụ nữ Việt Nam. Phát huy tiềm năng, vai trò, kinh nghiệm, tri thức của phụ nữ cao tuổi trong tham gia xây dựng tổ chức Hội, thực hiện hiệu quả chương trình phối hợp giữa Trung ương Hội LHPN Việt Nam và Trung ương Hội Người cao tuổi Việt Nam về hỗ trợ phụ nữ cao tuổi giai đoạn 2022 - 2027. Qua đó, tạo chuyển biến về nhận thức, hành động và nâng cao vai trò, trách nhiệm của mỗi cá nhân, các cấp hội và toàn xã hội về bảo vệ, chăm sóc và phát huy vai trò người cao tuổi trong tình hình mới.</p>
+
+                       
+                </article>
+
+                <div class="back-button">
+                    <a href="tnb1.html">
+                        &#8592; Quay lại
+                    </a>
+                </div>
+           
+          
+                <footer>
+                    <div class="footer-content">
+                        <h1>Hội Văn học Nghệ thuật Trà Vinh</h1>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="tintuc.html">Tin tức</a></li>
+                            <li><a href="sukien.html">Sự kiện</a></li>
+                            <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                            <li><a href="chihoitructhuoc.html">Chi hội trực thuộc</a></li>
+                            <li><a href="lienhe.html">Liên hệ</a></li>
+                        </ul>
+                        <div class="social-icons">
+                            <p class="ft">Liên hệ với chúng tôi</p>
+                            <a href="https://www.facebook.com/profile.php?id=61553952419617&mibextid=ZbWKwL" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.google.com" target="_blank" title="Google">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCPmc4Z_ZOhopi9hqPtE7CzQ" target="_blank" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <p class="copyright">
+                            Địa chỉ: 52A Phạm Ngũ Lão, phường 1, Tp. Trà Vinh, Trà Vinh
+                        </p>
+                    </div>
+                  </footer>
+        </div>
+       
+    </body>
+</html>

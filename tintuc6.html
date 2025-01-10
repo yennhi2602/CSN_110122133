@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hội Văn học Nghệ thuật</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+      
+            <header>
+                <a href="index.html">
+                    <img src="image/logotravinh.png" alt="Trang chủ">
+                    <div class="text-overlay">Hội Văn học Nghệ thuật</div>
+                </a>   
+
+            </header>
+            <nav>
+                <div class="menu">
+                    <ul>                       
+                        <li><a href="trangchu.html"> Giới thiệu</a></li>
+                        <li><a href="tintuc.html" >Tin tức</a></li>
+                        <li><a href="sukien.html" >Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html" >Hoạt động</a></li>
+                        <li class="has-submenu">
+                            <a href="chihoitructhuoc.html">Chi hội trực thuộc</a>
+                            <ul class="submenu">
+                                <li><a href="chihoi1.html">Văn học</a></li>
+                                <li><a href="chihoi2.html">Văn nghệ Khmer</a></li>
+                                <li><a href="chihoi3.html">Âm nhạc</a></li>
+                                <li><a href="chihoi4.html">Sân khấu</a></li>
+                                <li><a href="chihoi5.html">Nhiếp ảnh</a></li>
+                                <li><a href="chihoi6.html">Mỹ thuật</a></li>
+                                <li><a href="chi hoi7.html">Văn nghệ dân gian</a></li>
+                                <li><a href="chihoi8.html">Hội kiến trúc</a></li>
+                            </ul>
+                        </li>                   
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="header-r">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Tìm kiếm..." oninput="searchFunction()">
+                            <button onclick="searchFunction()">Tìm kiếm</button>
+                        </div>
+                    
+                        <div id="results"></div>
+                    
+                        <script src="script.js"></script>
+                        <div class="auth-icons">
+                            <a href="dangnhap.html" class="login-icon" onclick="showForm('login-form')">
+                                <i class="fas fa-user-lock" style="font-size: 32px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+            </nav>
+            <main class="news-detail">
+                <p class="news-content">
+                  <h2 class="news-title">Festival Mỹ thuật trẻ lần thứ 7 năm 2024 trao 29 Giải thưởng.</h2>
+                  <p class="news-meta">Ngày đăng: 30/11/2024</p>
+                  <p>         (VHO, 29/11/2024) - Ngày 29.11 tại Hà Nội, Cục Mỹ thuật, Nhiếp ảnh và Triển lãm (Bộ VHTTDL) đã trang trọng tổ chức Lễ khai mạc Festival Mỹ thuật trẻ lần thứ 7 năm 2024. Đây là hoạt động quy mô lớn, nhiều sức hút được tổ chức thường kỳ 2 năm một lần. Thứ trưởng Tạ Quang Đông dự và trao giải cho các tác giả có tác phẩm xuất sắc.
+                    
+                  </p>
+                  <img src="image/tt6.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption">Thứ trưởng Tạ Quang Đông và các đại biểu cắt băng khai mạc Festival Mỹ thuật trẻ lần thứ 7</figcaption>
+
+                  <p>Triển lãm công bố, giới thiệu các tác phẩm mỹ thuật mới, những gương mặt các nghệ sĩ trẻ từ 18- 35 tuổi.</p>
+                  <p>Phát biểu tại lễ khai mạc, Cục trưởng Cục Mỹ thuật, Nhiếp ảnh và Triển lãm Mã Thế Anh nhấn mạnh, Festival Mỹ thuật trẻ lần thứ 7 năm 2024 là một sự kiện có ý nghĩa và đặc biệt trong đời sống nghệ thuật Việt Nam.Đặc biệt trong không khí chào mừng Kỷ niệm 80 năm ngày thành lập Quân đội nhân dân Việt Nam (22.12.1944 – 22.12.2024), 35 năm ngày Hội quốc phòng toàn dân và hướng tới kỷ niệm 95 năm ngày thành lập Đảng Cộng sản Việt Nam quang vinh (3.2.1930- 3.2.2025).</p>
+
+                                       
+                    <img src="image/tt6.1.jpg" alt="Hình minh họa" class="content-image">
+                    <figcaption class="caption">Thứ trưởng Tạ Quang Đông tặng hoa và Bằng chứng nhận cho các thành viên BGK</figcaption>
+                   <p>“Festival Mỹ thuật trẻ không chỉ là nơi tôn vinh những tài năng trẻ mà còn là cầu nối đưa nghệ thuật đến gần hơn với công chúng. Đây là cơ hội để các nghệ sĩ trẻ giới thiệu những tác phẩm tâm huyết, phản ánh những góc nhìn mới mẻ, sáng tạo và những suy tư đầy sức sống về xã hội, con người và văn hóa đương đại…”, ông Mã Thế Anh chia sẻ.</p>
+                   <p>Sau 6 tháng phát động Festival Mỹ thuật trẻ năm 2024, BTC đã nhận được 1050 tác phẩm của 300 tác giả trong cả nước gửi về tham dự; Hội đồng nghệ thuật đã tuyển chọn 148 tác phẩm của 121 tác giả để trưng bày triển lãm, trong đó 27 tác phẩm xuất sắc nhất đã được trao giải thưởng, gồm 3 Giải Nhất, 4 Giải Nhì, 9 Giải Ba, 11 Giải khuyến khích. </p>
+
+                        <img src="image/tt6.2.jpg" alt="Hình minh họa" class="content-image">
+                        <figcaption class="caption">Thứ trưởng Tạ Quang Đông trao Giải Nhất cho các tác giả có tác phẩm xuất sắc</figcaption>
+                     
+
+                        <img src="image/tt6.3.jpg" alt="Hình minh họa" class="content-image">
+                        <figcaption class="caption">   Cục trưởng Cục Mỹ thuật, Nhiếp ảnh và Triển lãm Mã Thế Anh trao giải Nhì cho các tác giả</figcaption>
+                     <p> Đồng thời, BTC cũng đã trao 2 Giải thưởng là đồ án tốt nghiệp cùng 11 Giải phụ do các đơn vị, tổ chức trao thưởng.</p>
+                     <p> Theo Cục trưởng Mã Thế Anh, trải qua các kỳ tổ chức, Festival Mỹ thuật trẻ đã trở thành một sân chơi nghệ thuật chuyên nghiệp, uy tín, thu hút sự tham gia của nhiều nghệ sĩ trẻ tài năng trên khắp cả nước.</p>
+
+                        
+
+                        <img src="image/tt6.4.jpg" alt="Hình minh họa" class="content-image">
+                        <figcaption class="caption">Cục trưởng Cục Mỹ thuật, Nhiếp ảnh và Triển lãm Mã Thế Anh phát biểu tại lễ khai mạc</figcaption>
+                     <p> Trong lần thứ 7, công chúng yêu mỹ thuật tiếp tục chứng kiến sự đa dạng và phong phú trong thể loại và phong cách nghệ thuật, từ hội họa, điêu khắc, đồ họa đến nghệ thuật sắp đặt...</p>
+                     <p> Các tác phẩm không chỉ phản ánh tài năng, sự sáng tạo mà còn mang thông điệp sâu sắc về cuộc sống và trách nhiệm của thế hệ trẻ đối với cộng đồng xã hội.</p>
+
+
+                        <img src="image/tt6.5.jpg" alt="Hình minh họa" class="content-image">
+                        <figcaption class="caption">Thứ trưởng Tạ Quang Đông xem các tác phẩm được trưng bày </figcaption>
+                     <p> “Chúng tôi tin tưởng rằng, thông qua Festival, các nghệ sĩ trẻ sẽ có cơ hội học hỏi, giao lưu, đồng thời khẳng định được bản thân trong sự nghiệp sáng tạo nghệ thuật. Đây là nơi phát hiện, ươm mầm và phát triển những tài năng mới, góp phần làm phong phú thêm bức tranh mỹ thuật nước nhà…”, ông Mã Thế Anh chia sẻ.</p>
+                     <p>Các tác phẩm mỹ thuật tham gia Festival lần này đã đề cập đến những vấn đề của cuộc sống đương đại với góc nhìn của người trẻ; tư duy sáng tạo mới trong quan điểm sáng tác nghệ thuật của các nghệ sĩ trẻ, qua đó phản ánh sự phát triển các loại hình nghệ thuật đương đại cũng như đời sống mỹ thuật Việt Nam trong thời kỳ hội nhập.</p>
+                        
+
+                        <img src="image/tt6.6.jpg" alt="Hình minh họa" class="content-image">
+                        <figcaption class="caption">Festival Mỹ thuật trẻ lần thứ 7 năm 2024 thu hút đông đảo công chúng yêu mỹ thuật </figcaption>
+                      <p>  Festival mỹ thuật trẻ lần thứ 7 năm 2024 đã phản ánh hiện thực đời sống mỹ thuật của các tác giả trẻ đương đại Việt Nam hiện nay. Các tác phẩm trong Festival cho người xem thấy được sự trăn trở của các nghệ sĩ trẻ trước các vấn đề trong cuộc sống, xã hội đương đại, được gửi gắm vào tác phẩm để công chúng có cái nhìn rõ nét hơn về nghệ thuật đương đại hiện nay.</p>
+                      <p>Triển lãm kéo dài đến ngày 6.2.2025.</p>
+                     
+
+
+                </article>
+
+                <div class="back-button">
+                    <a href="tintuc6.html">
+                        &#8592; Quay lại
+                    </a>
+                </div>
+           
+          
+                <footer>
+                    <div class="footer-content">
+                        <h1>Hội Văn học Nghệ thuật Trà Vinh</h1>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="tintuc.html">Tin tức</a></li>
+                            <li><a href="sukien.html">Sự kiện</a></li>
+                            <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                            <li><a href="chihoitructhuoc.html">Chi hội trực thuộc</a></li>
+                            <li><a href="lienhe.html">Liên hệ</a></li>
+                        </ul>
+                        <div class="social-icons">
+                            <p class="ft">Liên hệ với chúng tôi</p>
+                            <a href="https://www.facebook.com/profile.php?id=61553952419617&mibextid=ZbWKwL" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.google.com" target="_blank" title="Google">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCPmc4Z_ZOhopi9hqPtE7CzQ" target="_blank" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <p class="copyright">
+                            Địa chỉ: 52A Phạm Ngũ Lão, phường 1, Tp. Trà Vinh, Trà Vinh
+                        </p>
+                    </div>
+                  </footer>
+        </div>
+       
+    </body>
+</html>

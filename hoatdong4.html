@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hội Văn học Nghệ thuật</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+      
+            <header>
+                <a href="index.html">
+                    <img src="image/logotravinh.png" alt="Trang chủ">
+                    <div class="text-overlay">Hội Văn học Nghệ thuật</div>
+                </a>   
+
+            </header>
+            <nav>
+                <div class="menu">
+                    <ul>                       
+                        <li><a href="trangchu.html"> Giới thiệu</a></li>
+                        <li><a href="tintuc.html" >Tin tức</a></li>
+                        <li><a href="sukien.html" >Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html" >Hoạt động</a></li>
+                        <li class="has-submenu">
+                            <a href="chihoitructhuoc.html">Chi hội trực thuộc</a>
+                            <ul class="submenu">
+                                <li><a href="chihoi1.html">Văn học</a></li>
+                                <li><a href="chihoi2.html">Văn nghệ Khmer</a></li>
+                                <li><a href="chihoi3.html">Âm nhạc</a></li>
+                                <li><a href="chihoi4.html">Sân khấu</a></li>
+                                <li><a href="chihoi5.html">Nhiếp ảnh</a></li>
+                                <li><a href="chihoi6.html">Mỹ thuật</a></li>
+                                <li><a href="chi hoi7.html">Văn nghệ dân gian</a></li>
+                                <li><a href="chihoi8.html">Hội kiến trúc</a></li>
+                            </ul>
+                        </li>                   
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="header-r">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Tìm kiếm..." oninput="searchFunction()">
+                            <button onclick="searchFunction()">Tìm kiếm</button>
+                        </div>
+                    
+                        <div id="results"></div>
+                    
+                        <script src="script.js"></script>
+                        <div class="auth-icons">
+                            <a href="dangnhap.html" class="login-icon" onclick="showForm('login-form')">
+                                <i class="fas fa-user-lock" style="font-size: 32px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </nav>
+            <main class="news-detail">
+                <p class="news-content">
+                  <h2 class="news-title">Hội thi Giọng ca cải lương tỉnh Trà Vinh lần thứ II, năm 2024.</h2>
+
+                  <p class="news-meta">Ngày đăng: 18/09/2024</p>
+                  <img src="image/hd4.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption"> Hội VHNT tỉnh Trà Vinh địa điểm diễn ra Hội thi</figcaption>
+                  <p>Hướng tới Kỷ niệm 100 năm ngày sinh Cố Soạn giả - NSND Viễn Châu (21/10/1924 - 21/10/2024), Hội Văn học Nghệ thuật Trà Vinh phối hợp với Sở Văn hoá, Thể thao và Du lịch tổ chức Hội thi Giọng ca cải lương tỉnh Trà Vinh lần thứ II, năm 2024 (phát động từ ngày 17/7 đến ngày 25/8/2024).</p>
+                  <p>Thực hiện kế hoạch công tác văn nghệ của Hội năm 2024, qua thời gian phát động, Ban Tổ chức Hội thi của Hội VHNT đã nhận được 92 thí sinh đăng ký dự thi đến từ 16 tỉnh, thành phố (tăng 02 thí sinh và tăng 03 tỉnh thành tham dự so với Hội tổ chức lần thứ I, năm 2022) gồm: Trà Vinh, Long An, Đồng Tháp, An Giang, Hậu Giang, Kiên Giang, Bạc Liêu, Bến Tre, Đồng Nai, Tây Ninh, Bình Dương, Cần Thơ, Vĩnh Long, Sóc Trăng, Tp. HCM và Khánh Hoà.</p>
+                  <p> Hội thi năm nay hứa hẹn mang đến một không gian văn hóa, văn nghệ có ý nghĩa tạo nên sinh khí vui tươi, phấn khởi trong văn nghệ sỹ và Nhân dân Trà Vinh,  tiếp tục khẳng định việc bảo tồn và phát huy những giá trị nghệ thuật sân khấu cải lương, đờn ca tài tử (được UNESCO công nhận).</p>
+                  <p>Hội thi sẽ chính thức khởi động vào ngày 20/9/2024 (khai mạc vào lúc 18 giờ 30 phút) và ngay sau lễ khai mạc là phần thi diễn vòng sơ khảo. Vòng sơ khảo diễn ra trong 04 đêm thi vào các ngày 20/9, 21/9, 22/9 và 28/9, tại Hội Văn học Nghệ thuật tỉnh Trà Vinh. Số 52A, Phạm Ngũ Lão, Phường 1, Tp Trà Vinh, tỉnh Trà Vinh</p>
+                  <p>Các vòng bán kết và chung kết Hội thi dự kiến sẽ diễn ra vào trung tuần tháng 10/2024.</p>                
+                
+                  <img src="image/hd4.1.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <img src="image/hd4.2.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption">Các Pano tuyên truyền cho Hội thi đã được treo trên các tuyến đường Tp. Trà Vinh</figcaption>
+
+                
+                </article>
+
+                <div class="back-button">
+                    <a href="hoatdong4.html">
+                        &#8592; Quay lại
+                    </a>
+                </div>
+                
+              </main>
+           
+          
+              <footer>
+                <div class="footer-content">
+                    <h1>Hội Văn học Nghệ thuật Trà Vinh</h1>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="tintuc.html">Tin tức</a></li>
+                        <li><a href="sukien.html">Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                        <li><a href="chihoitructhuoc.html">Chi hội trực thuộc</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <p class="ft">Liên hệ với chúng tôi</p>
+                        <a href="https://www.facebook.com/profile.php?id=61553952419617&mibextid=ZbWKwL" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank" title="Google">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCPmc4Z_ZOhopi9hqPtE7CzQ" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="copyright">
+                        Địa chỉ: 52A Phạm Ngũ Lão, phường 1, Tp. Trà Vinh, Trà Vinh
+                    </p>
+                </div>
+              </footer>
+        </div>
+       
+    </body>
+</html>

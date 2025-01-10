@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hội Văn học Nghệ thuật</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+      
+            <header>
+                <a href="index.html">
+                    <img src="image/logotravinh.png" alt="Trang chủ">
+                    <div class="text-overlay">Hội Văn học Nghệ thuật</div>
+                </a>   
+
+            </header>
+            <nav>
+                <div class="menu">
+                    <ul>                       
+                        <li><a href="trangchu.html"> Giới thiệu</a></li>
+                        <li><a href="tintuc.html" >Tin tức</a></li>
+                        <li><a href="sukien.html" >Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html" >Hoạt động</a></li>
+                        <li class="has-submenu">
+                            <a href="chihoitructhuoc.html">Chi hội trực thuộc</a>
+                            <ul class="submenu">
+                                <li><a href="chihoi1.html">Văn học</a></li>
+                                <li><a href="chihoi2.html">Văn nghệ Khmer</a></li>
+                                <li><a href="chihoi3.html">Âm nhạc</a></li>
+                                <li><a href="chihoi4.html">Sân khấu</a></li>
+                                <li><a href="chihoi5.html">Nhiếp ảnh</a></li>
+                                <li><a href="chihoi6.html">Mỹ thuật</a></li>
+                                <li><a href="chi hoi7.html">Văn nghệ dân gian</a></li>
+                                <li><a href="chihoi8.html">Hội kiến trúc</a></li>
+                            </ul>
+                        </li>                   
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="header-r">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Tìm kiếm..." oninput="searchFunction()">
+                            <button onclick="searchFunction()">Tìm kiếm</button>
+                        </div>
+                    
+                        <div id="results"></div>
+                    
+                        <script src="script.js"></script>
+                        <div class="auth-icons">
+                            <a href="dangnhap.html" class="login-icon" onclick="showForm('login-form')">
+                                <i class="fas fa-user-lock" style="font-size: 32px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </nav>
+            <main class="news-detail">
+                <p class="news-content">
+                  <h2 class="news-title">Tác giả Lâm Hữu Phúc đoạt giải Nhất Cuộc thi ảnh nghệ thuật tỉnh Trà Vinh năm 2024.</h2>
+
+                  <p class="news-meta">Ngày đăng: 21/07/2024</p>
+                  <p><strong>Ngày 20/7 Hội Văn học Nghệ thuật Trà Vinh tổ chức chấm ảnh công khai Cuộc thi sáng tác ảnh nghệ thuật truyền thống của tỉnh lần thứ 25 năm 2024. Chủ đề Cuộc thi về những thành tựu xây dựng đô thị “sáng - xanh - sạch - đẹp”.</strong></p>
+        
+                  <img src="image/hd7.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption"> Đồng chí Huỳnh Tấn Đạt, Phó Chủ tịch Hội Văn học Nghệ thuật Trà Vinh phát biểu khai mạc buổi chấm giải.</figcaption>
+                 <p>Sau hơn 04 tháng phát động và nhận ảnh (từ ngày 14/3 đến ngày 15/7), Ban tổ chức Cuộc thi nhận 331 ảnh màu và trắng đen của 31 tác giả (tăng 113 ảnh và tăng 19 tác giả so với năm 2023). Trong đó có 08 tác giả là hội viên Trung ương, 08 tác giả là hội viên địa phương và 15 tác giả trẻ.</p>
+                 <p>Nội dung ảnh dự thi thể hiện quá trình công nghiệp hóa, hiện đại hóa trong sản xuất, XDNTM, về phong cảnh, quê hương, con người, đặc trưng văn hóa, lao động sản xuất trên quê hương Trà Vinh và mở rộng ra khu vực đồng bằng sông Cửu Long. Trong đó, khuyến khích những tác phẩm về hoạt động du lịch, quảng bá hình ảnh mới, đẹp về Trà Vinh, về kết quả cuộc vận động “Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh”, về “Biển, đảo quê hương” và bảo vệ môi trường,…</p>
+
+
+                  <img src="image/hd7.1.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption">Ban giám khảo phân tích, chọn những ảnh tiêu biểu.</figcaption>
+                 <p>Trải qua 03 vòng chấm ảnh online, Ban giám khảo đã chọn 51 ảnh (48 ảnh màu, 03 ảnh trắng đen; 06 ảnh bộ, 45 ảnh đơn) của 20 tác giả vào vòng triển lãm và chấm công khai chọn ra bộ giải thưởng.</p>
+                 <p>Kết quả, Ban tổ chức trao 11 giải thưởng cho các tác phẩm tiêu biểu. Trong đó, tác phẩm “Bio Blue Việt Nam sự lựa chọn hàng đầu cho mọi ao tôm” của tác giả Lâm Hữu Phúc đoạt giải Nhất; 02 tác phẩm “Sách hay cần bạn đọc” của tác giải Nguyễn Văn Thọ và “Chiều công trường” của tác giải Lâm Điều Trung đoạt giải Nhì; 03 giải Ba thuộc về các tác phẩm “Ngày mới” của tác giả Dương Văn Hưởng, “Nghề tạo hình cho đất” của tác giả Lâm Điều Trung và “Hợp diễn” của tác giả Hồ Hoàng Giang cùng 05 giải Khuyến khích.</p>
+
+                  <img src="image/hd7.2.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption">Tác giả Lâm Hữu Phúc đoạt giải Nhất Cuộc thi ảnh nghệ thuật tỉnh Trà Vinh năm 2024.</figcaption>
+                 <p>Ngay sau buổi chấm ảnh, các thành viên ban giám khảo và các tác giả đã có cuộc trao đổi, chia sẻ về chuyên môn, nhằm giúp các tác giả kịp thời rút ra những kinh nghiệm, có thêm kiến thức trong sáng tác ảnh.</p>
+                 <p>Theo đánh giá của Ban giám khảo: số lượng, chất lượng tác phẩm tham gia cuộc thi năm nay đạt yêu cầu, có nhiều ảnh sắc độ tốt, bố cục trình bày hợp lý, góc nhìn đẹp, phù hợp chủ đề, góp phần quảng bá những hình ảnh của quê hương Trà Vinh.</p>
+
+                 <img src="image/hd7.3.jpg" alt="Hình ảnh bài viết" class="news-image">
+                  <figcaption class="caption">Các tác giả đoạt giải chụp ảnh lưu niệm cùng ban tổ chức, ban giám khảo cuộc thi.</p>
+                </article>
+
+                <div class="back-button">
+                    <a href="hoatdong7.html">
+                        &#8592; Quay lại
+                    </a>
+                </div>
+                
+              </main>
+           
+          
+              <footer>
+                <div class="footer-content">
+                    <h1>Hội Văn học Nghệ thuật Trà Vinh</h1>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="tintuc.html">Tin tức</a></li>
+                        <li><a href="sukien.html">Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                        <li><a href="chihoitructhuoc.html">Chi hội trực thuộc</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <p class="ft">Liên hệ với chúng tôi</p>
+                        <a href="https://www.facebook.com/profile.php?id=61553952419617&mibextid=ZbWKwL" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank" title="Google">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCPmc4Z_ZOhopi9hqPtE7CzQ" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="copyright">
+                        Địa chỉ: 52A Phạm Ngũ Lão, phường 1, Tp. Trà Vinh, Trà Vinh
+                    </p>
+                </div>
+              </footer>
+        </div>
+       
+    </body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hội Văn học Nghệ thuật</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+       
+        <div class="container">
+            <header>    
+                <a href="index.html">
+                    <img src="image/logotravinh.png" alt="Trang chủ">
+                    <div class="text-overlay">Hội Văn học Nghệ thuật</div>
+                </a>   
+
+            </header>
+           
+                <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="tintuc.html">Tin tức</a></li>
+                        <li><a href="sukien.html">Sự kiện</a></li>
+                        <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                        <li class="has-submenu">
+                            <a href="chihoitructhuoc.html">Chi hội trực thuộc</a>
+                            <ul class="submenu">
+                                <li><a href="chihoi1.html">Văn học</a></li>
+                                <li><a href="chihoi2.html">Văn nghệ Khmer</a></li>
+                                <li><a href="chihoi3.html">Âm nhạc</a></li>
+                                <li><a href="chihoi4.html">Sân khấu</a></li>
+                                <li><a href="chihoi5.html">Nhiếp ảnh</a></li>
+                                <li><a href="chihoi6.html">Mỹ thuật</a></li>
+                                <li><a href="chi hoi7.html">Văn nghệ dân gian</a></li>
+                                <li><a href="chihoi8.html">Hội kiến trúc</a></li>
+                            </ul>
+                        </li>                   
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="header-r">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Tìm kiếm..." oninput="searchFunction()">
+                            <button onclick="searchFunction()">Tìm kiếm</button>
+                        </div>
+                    
+                        <div id="results"></div>
+                    
+                        <script src="script.js"></script>
+                      
+                        <div class="auth-icons">
+                            <a href="dangnhap.html" class="login-icon" onclick="showForm('login-form')">
+                                <i class="fas fa-user-lock" style="font-size: 32px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        
+           
+            <div id="slide">
+             <div class="slideshow-container">
+                
+                <div class="slide">
+                    <img src="image/Le-Hoi-Ok-Om-Bok-Tai.jpg" alt="Ảnh 1">
+                
+                </div>
+            
+               
+                <div class="slide">
+                    <img src="image/cho tv.jpg" alt="Ảnh 2">
+                </div>
+            
+            
+                <div class="slide">
+                    <img src="image/Chua-Vam-Ray-Du-Lich (1).jpg" alt="Ảnh 3">
+                </div>
+    
+                <div class="slide">
+                    <img src="image/ghengo1.jpg" alt="Ảnh 4">
+                </div>
+            </div>
+         
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            
+            <script>
+                let slideIndex = 0;
+                showSlides();
+            
+                function showSlides() {
+                    let slides = document.getElementsByClassName("slide");
+                    let dots = document.getElementsByClassName("dot");
+            
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }    
+                    for (let i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";  
+                    dots[slideIndex - 1].className += " active";
+            
+                    setTimeout(showSlides, 4000); // Thay đổi ảnh mỗi 3 giây
+                }
+            </script>
+        
+           
+        <article>
+            <h3>TIN NỔI BẬT</h3>
+            <div class="new_list">
+                <div class="news_item">
+                    <a href="tnb1.html" class="title">
+                        <h4>Trà Vinh có 04 phụ nữ cao tuổi tiêu biểu được biểu dương toàn quốc.</h4>
+      
+                      </a>
+                      <div class="content">
+                    <a href="tnb1.html">
+                        <img src="image/tnb.jpg" alt="Hình ảnh bài viết">
+                    </a>
+
+                </div>
+                </div>
+                <div class="news_item">
+                    <a href="tnb2.html" class="title">
+                        <h4>Đại hội điểm Chi bộ 12, Đảng ủy Trường Đại học Trà Vinh.</h4>
+      
+                      </a>
+                      <div class="content">
+                    <a href="tnb2.html">
+                        <img src="image/tnb2.jpg" alt="Hình ảnh bài viết">
+                    </a>
+
+                </div>
+                </div>
+                <div class="news_item" id="fix"> 
+                    <a href="tnb3.html" class="title">
+                        <h4>Thủ tướng chủ trì Hội nghị của Chính phủ quán triệt, triển khai sắp xếp, tinh gọn bộ máy.</h4>
+      
+                      </a>
+                      <div class="content">
+                    <a href="tnb3.html">
+                        <img src="image/tnb3.jpg" alt="Hình ảnh bài viết">
+                    </a>
+
+                </div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </article>
+
+        <article>
+            <h3></h3>
+            <div class="new_list">
+                <div class="news_item">
+                    <a href="tnb4.html" class="title">
+                        <h4>Tăng cường nguồn lực đầu tư, đáp ứng yêu cầu cấp thiết phát triển con người và văn hóa Việt Nam.</h4>
+      
+                      </a>
+                      <div class="content">
+                    <a href="tnb4.html">
+                        <img src="image/tnb4.jpg" alt="Hình ảnh bài viết">
+                    </a>
+                    
+                   
+                       
+                    </div>
+                </div>
+                <div class="news_item">
+                    <a href="tnb5.html" class="title">
+                        <h4>Nghệ sĩ Nhiếp ảnh Bùi Tiền Phong được bầu làm Chi hội trưởng Chi hội Nghệ sĩ Nhiếp ảnh Việt Nam tỉnh Trà Vinh.</h4>
+      
+                      </a>
+                      <div class="content">
+                    <a href="tnb5.html">
+                        <img src="image/tnb5.jpg" alt="Hình ảnh bài viết">
+                    </a>
+
+                </div>
+                </div>
+                <div class="news_item" id="fix"> 
+                    <a href="tnb6.html" class="title">
+                        <h4>Công an tỉnh Trà Vinh: Công bố quyết định của Giám đốc Công an tỉnh về công tác cán bộ.</h4>
+      
+                      </a>
+                      <div class="content">
+                    <a href="tnb6.html">
+                        <img src="image/tnb6.jpg" alt="Hình ảnh bài viết">
+                    </a>
+                </div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </article>
+
+        <article>
+            <h3></h3>
+            <div class="new_list">
+                <div class="news_item">
+                    <a href="tnb7.html" class="title">
+                        <h4>Khởi công Xây dựng Nhà hát truyền hình - Đài PT-TH Trà Vinh</h4>
+      
+                      </a>
+                      <div class="content">
+                    <a href="tnb7.html">
+                        <img src="image/tnb7.jpg" alt="Hình ảnh bài viết">
+                    </a>
+                    
+                   
+                       
+                    </div>
+                </div>
+                <div class="news_item">
+                    <a href="tnb8.html" class="title">
+                        <h4>Thành phố Trà Vinh sáp nhập Phường 2, Phường 6 vào Phường 3.</h4>
+      
+                      </a>
+                      <div class="content">
+                    <a href="tnb8.html">
+                        <img src="image/tnb8.jpg" alt="Hình ảnh bài viết">
+                    </a>
+
+                </div>
+                </div>
+                <div class="news_item" id="fix"> 
+                    <a href="tnb9.html" class="title">
+                        <h4>Đảng ủy - Bộ Chỉ huy Bộ đội Biên phòng tỉnh Trà Vinh công bố quyết định về công tác cán bộ.</h4>
+      
+                      </a>
+                      <div class="content">
+                    <a href="tnb9.html">
+                        <img src="image/tnb9.jpg" alt="Hình ảnh bài viết">
+                    </a>
+                </div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </article>
+        
+        <footer>
+            <div class="footer-content">
+                <h1>Hội Văn học Nghệ thuật Trà Vinh</h1>
+                <ul class="footer-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="sukien.html">Sự kiện</a></li>
+                    <li><a href="lichhoatdong.html">Hoạt động</a></li>
+                    <li><a href="chihoitructhuoc.html">Chi hội trực thuộc</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+                <div class="social-icons">
+                    <p class="ft">Liên hệ với chúng tôi</p>
+                    <a href="https://www.facebook.com/profile.php?id=61553952419617&mibextid=ZbWKwL" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.google.com" target="_blank" title="Google">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCPmc4Z_ZOhopi9hqPtE7CzQ" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <p class="copyright">
+                    Địa chỉ: 52A Phạm Ngũ Lão, phường 1, Tp. Trà Vinh, Trà Vinh
+                </p>
+            </div>
+        </footer>
+    </div>   
+        
+    </body>
+</html>
